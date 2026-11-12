@@ -1,0 +1,53 @@
+name: Teaching Studio - 20 independent parallel QA scenarios
+on:
+  push:
+    branches:
+      - experiment/teaching-studio-20x-20261112
+    paths:
+      - 'teaching-studio/**'
+      - '.github/workflows/teaching-studio-20x.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  simulate-and-validate:
+    name: QA scenario ${{ matrix.case }}
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        case: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate lesson, screen flow and 38 simulated learners
+        run: python3 teaching-studio/qa.py --scenario ${{ matrix.case }} --out teaching-studio/test-results/scenario-${{ matrix.case }}.json
+      - name: Upload isolated test result
+        uses: actions/upload-artifact@v4
+        with:
+          name: teaching-scenario-${{ matrix.case }}
+          path: teaching-studio/test-results/scenario-${{ matrix.case }}.json
+          if-no-files-found: error
+          retention-days: 14
+  consolidate:
+    name: Consolidate 20 cases + build offline prototype
+    needs: simulate-and-validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: teaching-scenario-*
+          path: qa-results/
+          merge-multiple: true
+      - name: Create 20-case summary and fully offline HTML demonstration
+        run: python3 teaching-studio/qa.py --aggregate qa-results --out teaching-studio/build
+      - name: Upload professional sample and reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: anspace-teaching-studio-20QA-and-demo
+          path: teaching-studio/build/
+          if-no-files-found: error
+          retention-days: 30
