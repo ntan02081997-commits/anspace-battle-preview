@@ -122,11 +122,11 @@ $('notes-btn').addEventListener('click',()=>toggleNotes(!notes));
 $('clock-btn').addEventListener('click',()=>{lessonRunning=!lessonRunning;if(lessonTick)clearInterval(lessonTick);lessonTick=lessonRunning?setInterval(()=>{seconds++;updateElapsed();sync()},1000):null;$('clock-btn').textContent=lessonRunning?'Ⅱ Tạm dừng':'▶ Tiếp tục'});
 $('full-btn').addEventListener('click',()=>{setProjector(true);if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>{})});
 $('exit-btn').addEventListener('click',()=>{setProjector(false);if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(()=>{})});
-$('pop-btn').addEventListener('click',()=>{const url=location.href.split('#')[0]+'#projector';const win=window.open(url,'anspace-teaching-projector','noopener,width=1440,height=810');if(!win)alert('Trình duyệt đang chặn cửa sổ mới. Vui lòng cho phép popup hoặc dùng Toàn màn hình.');sync()});
+$('pop-btn').addEventListener('click',()=>{const url=location.href.split('#')[0]+'#projector';const win=window.open(url,'anspace-teaching-projector','width=1440,height=810');if(!win)alert('Trình duyệt đang chặn cửa sổ mới. Vui lòng cho phép popup hoặc dùng Toàn màn hình.');sync()});
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&location.hash!=='#projector')setProjector(false)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&location.hash!=='#projector'){setProjector(false);return}if(e.target&&['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName))return;if(e.key==='ArrowRight'){e.preventDefault();select(pos+1)}if(e.key==='ArrowLeft'){e.preventDefault();select(pos-1)}});
 window.addEventListener('storage',e=>{if(e.key!=='anspace-teach-v02'||!isProjector)return;try{updateFromRemote(JSON.parse(e.newValue))}catch(x){}});
 if(channel)channel.onmessage=e=>updateFromRemote(e.data);
-drawChapters();drawCounts();fresh();if(isProjector){document.body.classList.add('projector');try{const saved=JSON.parse(localStorage.getItem('anspace-teach-v02')||'null');if(saved)updateFromRemote(saved)}catch(e){}}else{draw()}updateElapsed();
+drawChapters();drawCounts();fresh();if(isProjector){document.body.classList.add('projector');draw();try{const saved=JSON.parse(localStorage.getItem('anspace-teach-v02')||'null');if(saved)updateFromRemote(saved)}catch(e){}}else{draw()}updateElapsed();
 })();
 </script></body></html>
