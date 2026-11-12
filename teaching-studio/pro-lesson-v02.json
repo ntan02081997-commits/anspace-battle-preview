@@ -1,0 +1,583 @@
+{
+  "id": "chem10-kntt-b15-t1",
+  "version": "v0.2",
+  "title": "Bài 15 – Phản ứng oxi hóa – khử",
+  "topic": "Tiết 1 – Số oxi hóa",
+  "subject": "Hóa học 10",
+  "source": "KHBD 15.1(1).docx",
+  "date": "12/11/2026",
+  "purpose": "Sử dụng để chuẩn bị và trình chiếu trong tiết 45 phút",
+  "timing": {
+    "total": 45,
+    "phases": [
+      {
+        "name": "Mở đầu",
+        "from": 0,
+        "to": 4
+      },
+      {
+        "name": "Hình thành kiến thức • 2.1",
+        "from": 4,
+        "to": 13
+      },
+      {
+        "name": "Hình thành kiến thức • 2.2",
+        "from": 13,
+        "to": 29
+      },
+      {
+        "name": "Luyện tập",
+        "from": 29,
+        "to": 41
+      },
+      {
+        "name": "Củng cố bổ sung",
+        "from": 41,
+        "to": 44
+      },
+      {
+        "name": "Vận dụng",
+        "from": 44,
+        "to": 45
+      }
+    ],
+    "unallocatedExplanation": "KHBD ghi thời lượng 4+25+12+1=42 phút; thêm 3 phút củng cố theo phần IV và đánh dấu là đề xuất, không tự nhận là nguyên gốc."
+  },
+  "principles": [
+    "Nội dung bám KHBD người dùng cung cấp",
+    "Học sinh chủ động làm PHT",
+    "GV chuyển từng màn thủ công",
+    "Đáp án và ghi chú chỉ dành GV",
+    "Không giả là đồng bộ Wayground thật",
+    "Không tự phát hành SGK/SGV"
+  ],
+  "slides": [
+    {
+      "id": "intro",
+      "from": 0,
+      "to": 0.5,
+      "phase": "Mở đầu",
+      "kind": "hero",
+      "title": "SỐ OXI HÓA",
+      "subtitle": "Bài 15 • Phản ứng oxi hóa – khử • Tiết 1",
+      "body": "Từ cách electron liên kết đến quy tắc xác định số oxi hóa.",
+      "teacher": "Chào lớp, giới thiệu tình huống. Chuẩn bị học liệu PHT1/PHT2 và thẻ QR.",
+      "evidence": "HS biết nhiệm vụ chính của tiết."
+    },
+    {
+      "id": "nacl",
+      "from": 0.5,
+      "to": 1.5,
+      "phase": "Mở đầu",
+      "kind": "bond_ionic",
+      "title": "KHI ELECTRON CHUYỂN HẲN",
+      "subtitle": "01 / Liên kết ion – NaCl",
+      "body": "Na nhường 1 electron; Cl nhận 1 electron. Hình thành Na⁺ và Cl⁻.",
+      "teacher": "Hỏi: Các ion hình thành trong NaCl là gì? Gọi 1 HS giải thích.",
+      "evidence": "HS nêu đúng Na⁺ và Cl⁻."
+    },
+    {
+      "id": "water",
+      "from": 1.5,
+      "to": 2.5,
+      "phase": "Mở đầu",
+      "kind": "bond_water",
+      "title": "KHI ELECTRON KHÔNG CHUYỂN HẲN",
+      "subtitle": "02 / Liên kết cộng hóa trị phân cực – H₂O",
+      "body": "Cặp electron dùng chung bị lệch về O vì O có độ âm điện lớn hơn H.",
+      "teacher": "Hỏi HS: Trong phân tử H₂O có ion O²⁻ tự do không? Không đồng nhất δ− với ion 2−.",
+      "evidence": "HS nhận ra electron chỉ lệch về phía O."
+    },
+    {
+      "id": "problem",
+      "from": 2.5,
+      "to": 4,
+      "phase": "Mở đầu",
+      "kind": "big_question",
+      "title": "VẬY QUY ƯỚC ĐIỆN TÍCH THẾ NÀO?",
+      "subtitle": "Nảy sinh vấn đề học tập",
+      "body": "Nếu không chuyển hẳn electron, làm thế nào theo dõi sự thay đổi electron khi phản ứng?",
+      "teacher": "Chờ HS dự đoán; chốt tên bài và chuyển vào khái niệm số oxi hóa.",
+      "evidence": "HS nêu nhu cầu sử dụng một đại lượng quy ước."
+    },
+    {
+      "id": "goals",
+      "from": 4,
+      "to": 5,
+      "phase": "Hình thành kiến thức • 2.1",
+      "kind": "objectives",
+      "title": "ĐÍCH ĐẾN CỦA TIẾT HỌC",
+      "subtitle": "3 yêu cầu kiến thức",
+      "body": "01. Hiểu khái niệm và ký hiệu. 02. Trình bày bốn quy tắc. 03. Xác định số oxi hóa trong đơn chất, hợp chất và ion.",
+      "teacher": "Nêu đích đến gọn, giao nhiệm vụ đọc SGK trang 71–72.",
+      "evidence": "HS xác định yêu cầu học tập.",
+      "cards": [
+        [
+          "01",
+          "KHÁI NIỆM",
+          "Điện tích quy ước"
+        ],
+        [
+          "02",
+          "QUY TẮC",
+          "Bốn quy tắc"
+        ],
+        [
+          "03",
+          "VẬN DỤNG",
+          "Đơn chất • hợp chất • ion"
+        ]
+      ]
+    },
+    {
+      "id": "pht1",
+      "from": 5,
+      "to": 5.7,
+      "phase": "Hình thành kiến thức • 2.1",
+      "kind": "task",
+      "title": "PHIẾU HỌC TẬP SỐ 1",
+      "subtitle": "Nhiệm vụ theo cặp • 19 cặp",
+      "body": "1. Điền từ khóa định nghĩa. 2. Xác định trong H₂/H₂O. 3. Phân biệt số oxi hóa với điện tích ion.",
+      "teacher": "Phát PHT1; nêu rõ sản phẩm là phiếu hoàn thành và một lời giải thích.",
+      "evidence": "HS hiểu ba nhiệm vụ trước khi bắt đầu.",
+      "cards": [
+        [
+          "1",
+          "KHÁI NIỆM",
+          "Điền khuyết"
+        ],
+        [
+          "2",
+          "H₂ / H₂O",
+          "Xác định"
+        ],
+        [
+          "3",
+          "+2 / 2+",
+          "Phân biệt"
+        ]
+      ]
+    },
+    {
+      "id": "solo",
+      "from": 5.7,
+      "to": 7.7,
+      "phase": "Hình thành kiến thức • 2.1",
+      "kind": "timer",
+      "title": "TỰ NGHIÊN CỨU – 2 PHÚT",
+      "subtitle": "SGK trang 71 • Làm việc cá nhân",
+      "body": "Đọc khái niệm. Hoàn thành ba nhiệm vụ của PHT1 bằng hiểu biết của bản thân.",
+      "teacher": "Không giải hộ; quan sát HS cần hỗ trợ, ghi nhận lỗi.",
+      "evidence": "Bản nháp cá nhân trước thảo luận.",
+      "taskSeconds": 120
+    },
+    {
+      "id": "pair",
+      "from": 7.7,
+      "to": 9.7,
+      "phase": "Hình thành kiến thức • 2.1",
+      "kind": "timer",
+      "title": "THẢO LUẬN CẶP ĐÔI",
+      "subtitle": "Lắng nghe • giải thích • phản biện",
+      "body": "Thống nhất đáp án và đánh dấu một điều hai bạn còn chưa chắc chắn.",
+      "teacher": "Gợi ý HS nói rõ: electron chuyển thật hay chỉ là giả định?",
+      "evidence": "Phiếu PHT1 hoàn chỉnh của 19 cặp.",
+      "taskSeconds": 120
+    },
+    {
+      "id": "definition",
+      "from": 9.7,
+      "to": 11,
+      "phase": "Hình thành kiến thức • 2.1",
+      "kind": "reveal",
+      "title": "SỐ OXI HÓA LÀ GÌ?",
+      "subtitle": "Chốt khái niệm theo KHBD",
+      "body": "Số oxi hóa là điện tích QUY ƯỚC của nguyên tử trong phân tử, khi coi các electron liên kết chuyển hoàn toàn về phía nguyên tử có độ âm điện lớn hơn.",
+      "teacher": "Mời 1 HS báo cáo; bấm hiện từng từ khóa để chuẩn hóa: quy ước, hoàn toàn, độ âm điện.",
+      "evidence": "HS phát biểu được khái niệm, không nhầm điện tích thực.",
+      "reveals": [
+        "Điện tích **quy ước**",
+        "Giả định electron chuyển **hoàn toàn**",
+        "Về nguyên tử có **độ âm điện lớn hơn**"
+      ]
+    },
+    {
+      "id": "notation",
+      "from": 11,
+      "to": 12.1,
+      "phase": "Hình thành kiến thức • 2.1",
+      "kind": "notation",
+      "title": "SỐ OXI HÓA KHÁC ĐIỆN TÍCH ION",
+      "subtitle": "Đừng đảo vị trí số và dấu",
+      "body": "+2, −2 là số oxi hóa (dấu trước số, đặt phía trên ký hiệu). 2+, 2− là điện tích ion (số trước dấu, ở góc trên bên phải).",
+      "teacher": "Cho HS giải thích vì sao số oxi hóa của O trong H₂O là −2 nhưng không tồn tại O²⁻ tự do.",
+      "evidence": "HS viết đúng và giải thích phân biệt."
+    },
+    {
+      "id": "checkconcept",
+      "from": 12.1,
+      "to": 13,
+      "phase": "Hình thành kiến thức • 2.1",
+      "kind": "choice",
+      "title": "KIỂM TRA NGỘ NHẬN",
+      "subtitle": "Phản biện nhanh trong 40 giây",
+      "body": "Oxygen có số oxi hóa −2 trong H₂O. Có thể khẳng định H₂O chứa ion O²⁻ tự do không?",
+      "teacher": "Cho HS giơ tay chọn, yêu cầu một HS giải thích. Chốt đây là quy ước, không phải điện tích ion thực.",
+      "evidence": "HS bác bỏ suy luận sai, giải thích có căn cứ.",
+      "question": "Trong phân tử H₂O tồn tại ion O²⁻ tự do?",
+      "options": [
+        "Có",
+        "Không"
+      ],
+      "correct": 1,
+      "explain": "Không. Liên kết O–H là liên kết cộng hóa trị phân cực; −2 là điện tích quy ước."
+    },
+    {
+      "id": "rules-start",
+      "from": 13,
+      "to": 14.5,
+      "phase": "Hình thành kiến thức • 2.2",
+      "kind": "rules",
+      "title": "BỐN QUY TẮC – BẢN ĐỒ TƯ DUY",
+      "subtitle": "Đọc SGK trang 72 • 1,5 phút",
+      "body": "Cần phân biệt: đơn chất, các giá trị thường gặp, phân tử trung hòa và ion.",
+      "teacher": "Yêu cầu HS đọc bốn quy tắc, ghi lại từ khóa vào PHT2.",
+      "evidence": "HS nhận diện được bốn nhóm quy tắc."
+    },
+    {
+      "id": "rules-detail",
+      "from": 14.5,
+      "to": 15.5,
+      "phase": "Hình thành kiến thức • 2.2",
+      "kind": "rule_cards",
+      "title": "QUY TẮC CẦN NHỚ",
+      "subtitle": "Từ dữ kiện đến phương trình",
+      "body": "R1 đơn chất: 0. R2 thường gặp: H +1, O −2; kim loại IA +1, IIA +2, Al +3. R3 trung hòa: tổng bằng 0. R4 ion: tổng bằng điện tích ion.",
+      "teacher": "Chiếu theo lớp thông tin; nhấn mạnh chữ 'thông thường', ngoại lệ H₂O₂ sẽ vận dụng ở nhà.",
+      "evidence": "HS phân biệt được điều kiện sử dụng các quy tắc.",
+      "cards": [
+        [
+          "01",
+          "ĐƠN CHẤT",
+          "Số oxi hóa = 0"
+        ],
+        [
+          "02",
+          "GIÁ TRỊ THƯỜNG GẶP",
+          "H +1 · O −2 · IA +1 · IIA +2 · Al +3"
+        ],
+        [
+          "03",
+          "PHÂN TỬ TRUNG HÒA",
+          "Σ số oxi hóa = 0"
+        ],
+        [
+          "04",
+          "ION ĐA NGUYÊN TỬ",
+          "Σ số oxi hóa = điện tích ion"
+        ]
+      ]
+    },
+    {
+      "id": "so2",
+      "from": 15.5,
+      "to": 17.5,
+      "phase": "Hình thành kiến thức • 2.2",
+      "kind": "equation",
+      "title": "GIẢI MẪU: SO₂",
+      "subtitle": "Quy trình 4 bước xác định số oxi hóa",
+      "body": "Từ O = −2 đến phương trình x + 2(−2) = 0; suy ra S có số oxi hóa +4.",
+      "teacher": "Đếm 4 bước, bấm hiện từng bước; yêu cầu HS ghi quy trình trước khi thực hành.",
+      "evidence": "HS nắm thứ tự gán → tổng → lập phương trình → kết luận.",
+      "formula": [
+        "Gán O = −2",
+        "SO₂ trung hòa ⇒ tổng = 0",
+        "x + 2(−2) = 0",
+        "x = +4 (S)"
+      ]
+    },
+    {
+      "id": "pht2",
+      "from": 17.5,
+      "to": 18,
+      "phase": "Hình thành kiến thức • 2.2",
+      "kind": "task",
+      "title": "PHIẾU HỌC TẬP SỐ 2",
+      "subtitle": "Ba bài cốt lõi • Một bài phân hóa",
+      "body": "Fe; H₂SO₄; SO₄²⁻. Hoàn thành sớm: NH₄⁺.",
+      "teacher": "Phát hoặc nhắc PHT2; yêu cầu trình bày phương trình, không chỉ ghi kết quả.",
+      "evidence": "HS hiểu sản phẩm cần nộp.",
+      "cards": [
+        [
+          "A",
+          "Fe",
+          "Đơn chất"
+        ],
+        [
+          "B",
+          "H₂SO₄",
+          "Hợp chất trung hòa"
+        ],
+        [
+          "C",
+          "SO₄²⁻",
+          "Ion đa nguyên tử"
+        ],
+        [
+          "+",
+          "NH₄⁺",
+          "Phân hóa"
+        ]
+      ]
+    },
+    {
+      "id": "practice-work",
+      "from": 18,
+      "to": 22.5,
+      "phase": "Hình thành kiến thức • 2.2",
+      "kind": "timer",
+      "title": "TỰ GIẢI + ĐỐI CHIẾU",
+      "subtitle": "4 phút 30 giây • PHT2",
+      "body": "Bắt đầu từ dữ kiện đã biết. Chọn đúng quy tắc tổng số oxi hóa. Đặt x và giải.",
+      "teacher": "Quan sát HS, phát hiện 2 ngộ nhận: ion bằng 0; đảo dấu và số. Không cho đáp án ngay.",
+      "evidence": "Bài làm có phương trình đại số.",
+      "taskSeconds": 270
+    },
+    {
+      "id": "h2so4",
+      "from": 22.5,
+      "to": 23.8,
+      "phase": "Hình thành kiến thức • 2.2",
+      "kind": "equation",
+      "title": "BÁO CÁO 1: H₂SO₄",
+      "subtitle": "Phân tử trung hòa",
+      "body": "2(+1) + x + 4(−2) = 0 → x = +6.",
+      "teacher": "Mời HS trình bày, chất vấn vì sao tổng bằng 0.",
+      "evidence": "HS xác định S +6 trong H₂SO₄.",
+      "formula": [
+        "H = +1; O = −2",
+        "H₂SO₄ trung hòa ⇒ tổng = 0",
+        "2(+1) + x + 4(−2) = 0",
+        "x = +6 (S)"
+      ]
+    },
+    {
+      "id": "sulfate",
+      "from": 23.8,
+      "to": 25.3,
+      "phase": "Hình thành kiến thức • 2.2",
+      "kind": "ion_check",
+      "title": "BÁO CÁO 2: SO₄²⁻",
+      "subtitle": "Tổng số oxi hóa của ion ≠ 0",
+      "body": "x + 4(−2) = −2 → x = +6. Trọng tâm: tổng bằng đúng điện tích ion.",
+      "teacher": "Hỏi HS vì sao vế phải là −2, không phải 0; yêu cầu giải thích trước khi hiện đáp án.",
+      "evidence": "HS không nhầm ion với phân tử trung hòa.",
+      "options": [
+        "0",
+        "−2",
+        "+2"
+      ],
+      "correct": 1,
+      "explain": "Vì SO₄²⁻ mang điện tích −2, tổng số oxi hóa của các nguyên tử bằng −2. Vậy x + 4(−2) = −2 ⇒ x = +6."
+    },
+    {
+      "id": "ammonium",
+      "from": 25.3,
+      "to": 26.3,
+      "phase": "Hình thành kiến thức • 2.2",
+      "kind": "equation",
+      "title": "PHÂN HÓA: NH₄⁺",
+      "subtitle": "Bài vận dụng cho học sinh hoàn thành sớm",
+      "body": "x + 4(+1) = +1 → x = −3 (N).",
+      "teacher": "Mời HS khá giải thích vì sao N có giá trị âm dù ion mang điện tích +1.",
+      "evidence": "HS phân biệt số oxi hóa nguyên tử với tổng điện tích ion.",
+      "formula": [
+        "H = +1",
+        "NH₄⁺ mang điện tích +1",
+        "x + 4(+1) = +1",
+        "x = −3 (N)"
+      ]
+    },
+    {
+      "id": "four-rules-closure",
+      "from": 26.3,
+      "to": 29,
+      "phase": "Hình thành kiến thức • 2.2",
+      "kind": "summary_rules",
+      "title": "CHỐT: BỐN QUY TẮC + BỐN BƯỚC",
+      "subtitle": "Ghi vở – chuẩn hóa cuối hoạt động",
+      "body": "Xác định dữ kiện → tổng = 0 hay điện tích? → lập phương trình → kiểm tra và kết luận.",
+      "teacher": "Tổ chức HS nhắc quy tắc, nhắc 'thông thường' ở H/O và ngoại lệ peroxide.",
+      "evidence": "HS hoàn thiện PHT2 và tự sửa lỗi."
+    },
+    {
+      "id": "qr-start",
+      "from": 29,
+      "to": 30,
+      "phase": "Luyện tập",
+      "kind": "qr_intro",
+      "title": "KIỂM TRA NHANH – 5 CÂU",
+      "subtitle": "Wayground Paper Mode · Thẻ QR",
+      "body": "HS giơ thẻ theo hướng dẫn. 4 phút làm bài, 8 phút chữa và phản hồi theo KHBD.",
+      "teacher": "Kiểm tra thẻ và máy quét. Chế độ minh họa dưới đây dùng câu biên soạn thay thế; không phải câu gốc của file KHBD.",
+      "evidence": "Có dữ liệu lựa chọn từ thẻ QR nếu lớp thật kết nối Wayground.",
+      "sourceStatus": "5 câu tiếp theo do hệ thống biên soạn minh họa; chỉ đối chiếu đáp án B–C–B–A–C của KHBD."
+    },
+    {
+      "id": "q1",
+      "from": 30,
+      "to": 30.8,
+      "phase": "Luyện tập",
+      "kind": "quiz",
+      "title": "CÂU 1 / 5",
+      "subtitle": "Quy tắc đơn chất",
+      "body": "Trong đơn chất O₂, số oxi hóa của O bằng bao nhiêu?",
+      "teacher": "Cho HS giơ thẻ; yêu cầu giải thích nếu chọn −2.",
+      "evidence": "HS vận dụng quy tắc 1.",
+      "options": [
+        "−2",
+        "0",
+        "+2",
+        "−1"
+      ],
+      "correct": 1,
+      "explain": "Đơn chất O₂: số oxi hóa của mỗi nguyên tử O bằng 0.",
+      "sourceStatus": "Câu minh họa tự biên soạn; đáp án B trùng khóa KHBD."
+    },
+    {
+      "id": "q2",
+      "from": 30.8,
+      "to": 31.6,
+      "phase": "Luyện tập",
+      "kind": "quiz",
+      "title": "CÂU 2 / 5",
+      "subtitle": "Liên hệ hợp chất thông dụng",
+      "body": "Trong phân tử H₂O, số oxi hóa của oxygen là bao nhiêu?",
+      "teacher": "Dùng đáp án để gợi lại bản chất điện tích quy ước.",
+      "evidence": "HS nhớ giá trị thông thường của O.",
+      "options": [
+        "+1",
+        "0",
+        "−2",
+        "−1"
+      ],
+      "correct": 2,
+      "explain": "O có số oxi hóa −2 trong H₂O theo quy tắc thông thường.",
+      "sourceStatus": "Câu minh họa tự biên soạn; đáp án C trùng khóa KHBD."
+    },
+    {
+      "id": "q3",
+      "from": 31.6,
+      "to": 32.4,
+      "phase": "Luyện tập",
+      "kind": "quiz",
+      "title": "CÂU 3 / 5",
+      "subtitle": "Lập phương trình cho hợp chất trung hòa",
+      "body": "Số oxi hóa của S trong H₂SO₃ là bao nhiêu?",
+      "teacher": "Hỏi HS thiết lập phương trình 2(+1) + x + 3(−2) = 0.",
+      "evidence": "HS tìm x = +4.",
+      "options": [
+        "+6",
+        "+4",
+        "+2",
+        "−2"
+      ],
+      "correct": 1,
+      "explain": "2(+1) + x + 3(−2) = 0 ⇒ x = +4.",
+      "sourceStatus": "Câu minh họa tự biên soạn theo phép tính trong phần chữa bài KHBD; đáp án B."
+    },
+    {
+      "id": "q4",
+      "from": 32.4,
+      "to": 33.2,
+      "phase": "Luyện tập",
+      "kind": "quiz",
+      "title": "CÂU 4 / 5",
+      "subtitle": "Tránh bẫy điện tích ion",
+      "body": "Trong SO₃²⁻, số oxi hóa của S bằng bao nhiêu?",
+      "teacher": "Nhắc người học xét điện tích ion trước khi lập phương trình.",
+      "evidence": "HS tìm x = +4.",
+      "options": [
+        "+4",
+        "+6",
+        "+2",
+        "−4"
+      ],
+      "correct": 0,
+      "explain": "x + 3(−2) = −2 ⇒ x = +4.",
+      "sourceStatus": "Câu minh họa tự biên soạn theo phép tính trong phần chữa bài KHBD; đáp án A."
+    },
+    {
+      "id": "q5",
+      "from": 33.2,
+      "to": 34,
+      "phase": "Luyện tập",
+      "kind": "quiz",
+      "title": "CÂU 5 / 5",
+      "subtitle": "Vận dụng ion đa nguyên tử",
+      "body": "Trong NH₄⁺, số oxi hóa của N là bao nhiêu?",
+      "teacher": "Đề nghị HS giải thích tổng ion là +1.",
+      "evidence": "HS tìm x = −3.",
+      "options": [
+        "+3",
+        "−4",
+        "−3",
+        "+5"
+      ],
+      "correct": 2,
+      "explain": "x + 4(+1) = +1 ⇒ x = −3.",
+      "sourceStatus": "Câu minh họa tự biên soạn; đáp án C trùng khóa KHBD."
+    },
+    {
+      "id": "results",
+      "from": 34,
+      "to": 38,
+      "phase": "Luyện tập",
+      "kind": "qr_results",
+      "title": "PHÂN TÍCH KẾT QUẢ CHỌN ĐÁP ÁN",
+      "subtitle": "8 phút chữa và phản hồi • phần 1",
+      "body": "Khóa đáp án KHBD: B – C – B – A – C. Đánh dấu câu nhiều HS sai và yêu cầu giải thích.",
+      "teacher": "Nhập hoặc đọc thống kê Wayground; không hiển thị tỷ lệ giả nếu chưa nhận dữ liệu thật.",
+      "evidence": "GV chọn câu cần chữa, HS tự sửa.",
+      "sourceStatus": "Khóa đáp án từ KHBD; tỷ lệ lớp học chỉ hiển thị khi giáo viên nhập dữ liệu."
+    },
+    {
+      "id": "misconceptions",
+      "from": 38,
+      "to": 41,
+      "phase": "Luyện tập",
+      "kind": "errors",
+      "title": "BỆNH ÁN LỖI SAI HÓA HỌC",
+      "subtitle": "Chữa sâu những ngộ nhận phổ biến",
+      "body": "Lỗi 1: coi tổng của ion bằng 0. Lỗi 2: viết 2+ thay cho số oxi hóa +2. Lỗi 3: áp dụng O = −2 máy móc.",
+      "teacher": "Chọn một lỗi thực tế qua thống kê lớp, mời HS tự sửa trên màn hình.",
+      "evidence": "HS nêu được nguyên nhân và cách khắc phục."
+    },
+    {
+      "id": "consolidate",
+      "from": 41,
+      "to": 44,
+      "phase": "Củng cố bổ sung",
+      "kind": "exit_summary",
+      "title": "TỰ KIỂM TRA – BẠN ĐÃ NẮM GÌ?",
+      "subtitle": "3 phút củng cố bổ sung để đủ 45 phút",
+      "body": "Đọc lại 3 yêu cầu: khái niệm, 4 quy tắc, xác định trong đơn chất/hợp chất/ion. Mỗi yêu cầu kèm một minh chứng.",
+      "teacher": "Đây là 3 phút bổ sung theo phần IV 'Củng cố – dặn dò' của KHBD nhưng chưa định thời lượng riêng trong bảng tiến trình; kiểm tra nhẹ nhàng, không thêm bài kiểm tra chính thức.",
+      "evidence": "Học sinh nhận diện điểm chưa chắc chắn trước khi ra về.",
+      "sourceStatus": "3 phút đề xuất phân bổ từ khoảng trống thời lượng của KHBD: 45 − (4+25+12+1) = 3."
+    },
+    {
+      "id": "home",
+      "from": 44,
+      "to": 45,
+      "phase": "Vận dụng",
+      "kind": "homework",
+      "title": "GIAO NHIỆM VỤ – NƯỚC OXY GIÀ",
+      "subtitle": "H₂O₂ • Nộp đầu tiết sau",
+      "body": "Hoàn thành bốn nhận định Đúng/Sai; sửa nhận định sai và viết phương trình giải thích.",
+      "teacher": "Nêu yêu cầu, thời hạn và lưu ý đọc SGK. Không thu và chấm trước khi HS hoàn thành tại nhà.",
+      "evidence": "Phiếu vận dụng nộp đầu tiết tiếp theo.",
+      "sourceStatus": "Đáp án để trong chế độ giáo viên: a Đ, b Đ, c S, d Đ; trong H₂O₂, O = −1."
+    }
+  ]
+}
