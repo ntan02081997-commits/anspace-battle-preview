@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Sentry Preview - kiểm tra lỗi</title>
+<script src="https://js-de.sentry-cdn.com/6c8f86e6489322ab56cd43a493414373.min.js" crossorigin="anonymous"></script>
+<style>body{background:#101828;color:#f8fafc;font:16px/1.5 system-ui,sans-serif;max-width:650px;margin:8vh auto;padding:20px}button{padding:14px;border-radius:9px;cursor:pointer}small{color:#aeb9ca}</style></head>
+<body><h1>Kiểm tra Sentry — Preview riêng</h1><p>Chỉ bấm nút nếu muốn gửi <strong>một lỗi thử nghiệm</strong> đến dự án Sentry. Không có dữ liệu người dùng hay Production.</p><button id="send" type="button">Gửi lỗi thử nghiệm</button><p id="status" role="status">Chưa gửi.</p><small>Chỉ dùng trong nhánh Preview. Không dùng làm trang game chính.</small>
+<script>document.getElementById('send').addEventListener('click',function(){document.getElementById('status').textContent='Đã kích hoạt lỗi thử nghiệm. Kiểm tra Issues trong Sentry để xác minh đã nhận.';setTimeout(function(){throw new Error('ANSPACE_SENTRY_PREVIEW_TEST_20261112');},0);});</script>
+</body></html>
