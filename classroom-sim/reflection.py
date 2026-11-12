@@ -168,7 +168,8 @@ def value(s, judges):
     # Teacher objective combines all-knowledge achievement, basic attainment and quality.
     return .50*s["all3"]/38 + .20*s["basic"]/38 + .30*sum(j["score_10"] for j in judges)/30
 
-def propose(s, judges, policy):
+def propose(s, judges, policy, blocked=None):
+    blocked=set(blocked or ())
     req=s["requirements"]
     candidate=[]
     if req["K3_application"] < 27: candidate.append("ion_scaffold")
@@ -179,7 +180,7 @@ def propose(s, judges, policy):
     if s["basic"]<28: candidate.append("formative_feedback")
     candidate+=["pair_guidance","scan_rehearsal","concept_clarifier"]
     for key in candidate:
-        if policy[key]<LIMITS[key]:
+        if policy[key]<LIMITS[key] and key not in blocked:
             return key
     return None
 
@@ -200,10 +201,11 @@ def paired_accept(old, candidate, iteration):
                         and statistics.mean(new_all)>=statistics.mean(old_all))
     return (d>=.001 and learning_not_worse),round(d,5)
 
-def reflect(s,judges,old_policy,iteration):
-    key=propose(s,judges,old_policy)
+def reflect(s,judges,old_policy,iteration,blocked):
+    key=propose(s,judges,old_policy,blocked)
     if key is None:
-        return dict(old_policy), {"status":"no_change_available","reason":"All capped interventions reached"}
+        return dict(old_policy), {"status":"no_change_available",
+          "reason":"All interventions capped or rejected in this exact policy state; no repeated failed experiment."}
     next_policy=dict(old_policy);next_policy[key]+=1
     approved,paired_gain=paired_accept(old_policy,next_policy,iteration)
     note=CHANGE_NOTES[key]
@@ -248,7 +250,11 @@ def run(state_path, out_dir, lessons):
         judges=grade(lesson)
         baseline=simulate(seed,{k:0 for k in LIMITS})
         b_judges=grade(baseline)
-        after,rec=reflect(lesson,judges,old,i)
+        rejected={x["reflection"]["change_for_next_lesson"].get("action")
+                  for x in history["sessions"]
+                  if x["reflection"]["change_for_next_lesson"]["status"]=="trial_rejected"
+                  and x["lesson_metrics"]["policy"]==old}
+        after,rec=reflect(lesson,judges,old,i,rejected)
         history["sessions"].append({
             "lesson":i,"seed":seed,"rubric_version":"v2.1_evidence_guard","lesson_metrics":strip_student(lesson),
             "paired_baseline_metrics":strip_student(baseline),
@@ -351,6 +357,10 @@ def self_test():
     newer=dict(zero);newer["ion_scaffold"]=1
     accepted,gain=paired_accept(zero,newer,1)
     assert isinstance(accepted,bool) and isinstance(gain,float)
+    constrained=dict(zero)
+    for k,cap in LIMITS.items():constrained[k]=cap
+    constrained["scan_rehearsal"]=0
+    assert propose(a,grade(a),constrained,{"scan_rehearsal"}) is None
     print("REFLECTION SELF-TEST PASSED")
 
 if __name__=="__main__":
