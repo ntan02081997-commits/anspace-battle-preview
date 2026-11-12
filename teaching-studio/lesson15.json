@@ -1,0 +1,128 @@
+{
+  "schema": "teaching-studio.lesson.v1",
+  "id": "hoa10-b15-t1",
+  "subject": "Hóa học 10",
+  "series": "Kết nối tri thức với cuộc sống",
+  "lesson": "Bài 15 – Phản ứng oxi hóa – khử",
+  "session": "Tiết 1 – Số oxi hóa",
+  "duration": 45,
+  "phaseMinutes": {
+    "opening": 4,
+    "knowledge": 25,
+    "practice": 12,
+    "application": 1
+  },
+  "sourceGapMinutes": 3,
+  "provenance": {
+    "khbd": "Mẫu KHBD 15.1(1).docx do giáo viên cung cấp",
+    "sgk": "Chưa nhập toàn văn vào ứng dụng",
+    "sgv": "Chưa nhập vào ứng dụng",
+    "waygroundQuestions": "Thiếu nội dung nguyên văn năm câu trong bản KHBD đã xét",
+    "sourceGap": "3 phút trong tổng 45 phút chưa được chỉ định rõ trong thời lượng từng hoạt động; cần giáo viên chốt"
+  },
+  "objectives": [
+    {
+      "id": "K1",
+      "text": "Nêu khái niệm số oxi hóa và nhận biết cách biểu diễn",
+      "evidence": [
+        "pht1",
+        "oral"
+      ]
+    },
+    {
+      "id": "K2",
+      "text": "Trình bày bốn quy tắc xác định số oxi hóa",
+      "evidence": [
+        "pht2",
+        "oral"
+      ]
+    },
+    {
+      "id": "K3",
+      "text": "Xác định số oxi hóa trong đơn chất, hợp chất và ion",
+      "evidence": [
+        "pht2",
+        "wayground",
+        "homework"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "opening",
+      "phase": "Mở đầu",
+      "sub": "Tình huống xuất phát",
+      "minutes": 4,
+      "title": "Vì sao cần số oxi hóa?",
+      "subtitle": "So sánh NaCl và H₂O",
+      "prompt": "Trong NaCl, electron được chuyển như thế nào? Trong H₂O, cặp electron liên kết có chuyển hoàn toàn để tạo các ion tự do không?",
+      "teacher": "Cho học sinh quan sát hai sơ đồ, đặt câu hỏi đối chiếu liên kết ion và liên kết cộng hóa trị phân cực; gọi HS giải thích và dẫn sang điện tích quy ước.",
+      "student": "Suy nghĩ cá nhân, quan sát mô hình NaCl/H₂O và nêu dự đoán.",
+      "assessment": "Ghi nhận quan niệm chuyển hoàn toàn electron trong phân tử H₂O là lỗi cần khai thác.",
+      "kind": "compare",
+      "objective": "K1"
+    },
+    {
+      "id": "concept",
+      "phase": "Hình thành kiến thức",
+      "sub": "2.1 Khái niệm",
+      "minutes": 9,
+      "title": "Khái niệm và cách biểu diễn",
+      "subtitle": "Số oxi hóa ≠ điện tích ion",
+      "prompt": "Định nghĩa số oxi hóa; xác định trong H₂ và H₂O; phân biệt số oxi hóa +2 với điện tích ion 2+.",
+      "teacher": "PHT số 1: 2 phút cá nhân + 2 phút trao đổi cặp; yêu cầu HS giải thích chữ số, dấu và vị trí ghi.",
+      "student": "Hoàn thành PHT1, giải thích điện tích quy ước và sửa nhầm lẫn giữa +2 và 2+.",
+      "assessment": "PHT1: khái niệm, cách biểu diễn và giải thích trường hợp H₂O.",
+      "kind": "concept",
+      "objective": "K1"
+    },
+    {
+      "id": "rules",
+      "phase": "Hình thành kiến thức",
+      "sub": "2.2 Bốn quy tắc",
+      "minutes": 16,
+      "title": "Bốn quy tắc xác định số oxi hóa",
+      "subtitle": "Mô hình SO₂ · Luyện Fe, H₂SO₄, SO₄²⁻ · Phân hóa NH₄⁺",
+      "prompt": "Xác định số oxi hóa của S trong SO₄²⁻. Tổng số oxi hóa của ion bằng bao nhiêu?",
+      "teacher": "Hướng dẫn ví dụ SO₂; giao PHT2, hỏi vì sao tổng số oxi hóa bằng điện tích ion trong SO₄²⁻; không giải hộ HS.",
+      "student": "Lập phương trình, trao đổi kết quả; bài phân hóa NH₄⁺ cho nhóm xong sớm.",
+      "assessment": "PHT2: Fe 0, S trong H₂SO₄ +6, S trong SO₄²⁻ +6, N trong NH₄⁺ −3.",
+      "kind": "calculator",
+      "objective": "K2,K3"
+    },
+    {
+      "id": "practice",
+      "phase": "Luyện tập",
+      "sub": "Wayground Paper Mode",
+      "minutes": 12,
+      "title": "Luyện tập với thẻ QR",
+      "subtitle": "5 câu hỏi · 38 học sinh",
+      "prompt": "Giơ thẻ QR để trả lời sau hiệu lệnh giáo viên. Sau khi quét, giải thích một đáp án chưa chính xác.",
+      "teacher": "Quét thẻ Wayground Paper Mode, đọc dữ liệu câu sai nhiều và cho HS tự điều chỉnh. Năm câu gốc chưa được nhập, không tạo câu hỏi giả là bản SGK.",
+      "student": "Trả lời 5 câu cá nhân qua thẻ QR; giải thích và tự sửa lỗi.",
+      "assessment": "Đáp án theo KHBD: B, C, B, A, C; chưa có thân câu đầy đủ nên chỉ hiển thị đáp án tham chiếu.",
+      "kind": "quiz",
+      "objective": "K1,K2,K3"
+    },
+    {
+      "id": "application",
+      "phase": "Vận dụng",
+      "sub": "Giao phiếu về nhà",
+      "minutes": 1,
+      "title": "Vận dụng: H₂O₂",
+      "subtitle": "Phiếu củng cố sau tiết học",
+      "prompt": "Xét số oxi hóa của O trong hydrogen peroxide H₂O₂ và hoàn thành 4 nhận định Đúng/Sai tại nhà.",
+      "teacher": "Giao phiếu vận dụng H₂O₂, yêu cầu nộp đầu tiết sau. Không chấm sản phẩm khi chưa thu.",
+      "student": "Ghi nhiệm vụ và mang về hoàn thành.",
+      "assessment": "Tham chiếu bốn nhận định: Đ, Đ, S, Đ; O trong H₂O₂ có số oxi hóa −1.",
+      "kind": "homework",
+      "objective": "K3"
+    }
+  ],
+  "simulation": {
+    "students": 38,
+    "judges": 3,
+    "allowed": "Mô phỏng xác suất và thang tiêu chí minh chứng",
+    "caveat": "Không phải học sinh hoặc ba mô hình AI độc lập; chưa được hiệu chỉnh bởi dữ liệu lớp học thực tế."
+  }
+}
