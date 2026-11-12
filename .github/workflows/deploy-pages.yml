@@ -1,4 +1,4 @@
-name: Publish public Preview landing
+name: Publish isolated public Preview
 on:
   push:
     branches: [main]
@@ -12,24 +12,28 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Ensure preview is isolated
+      - name: Build strictly allowlisted public site
         shell: bash
         run: |
           set -euo pipefail
-          test -f index.html
-          if grep -R -Ei --include='*.html' --include='*.js' --include='*.json' '(supabase\.co|anspace-battle\.vercel\.app|service_role|SUPABASE_SERVICE_ROLE_KEY)' .; then
-            echo 'Blocked: potential production endpoint or secret reference'
+          mkdir -p public
+          test -s index.html
+          cp index.html public/index.html
+          touch public/.nojekyll
+          if grep -R -Ei '(supabase\\.co|anspace-battle\\.vercel\\.app|service_role|SUPABASE_SERVICE_ROLE_KEY|https?://[^ "<>]+/rest/v1)' public; then
+            echo 'BLOCKED: possible production backend or secret'
             exit 1
           fi
+          test "$(find public -type f | wc -l)" -eq 2
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: public
       - id: deployment
         uses: actions/deploy-pages@v4
