@@ -1,0 +1,34 @@
+name: Teaching Studio 45-min lesson – build and QA
+on:
+  push:
+    branches:
+      - feature/teaching-studio-b15-45min-pro-20261112
+    paths:
+      - 'teaching-studio/pro-*'
+      - 'teaching-studio/build_v02.py'
+      - '.github/workflows/teaching-studio-v02.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile full lesson and assert KHBD timing
+        run: python3 teaching-studio/build_v02.py
+      - name: Verify embedded contents and page skeleton
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s teaching-studio/dist/index.html
+          grep -q '30 màn' teaching-studio/dist/index.html
+          grep -q 'teacher-panels' teaching-studio/dist/index.html
+          grep -q 'lesson-data' teaching-studio/dist/index.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AnSpace-Teaching-Studio-45min-v02
+          path: teaching-studio/dist
+          retention-days: 30
+          if-no-files-found: error
