@@ -1,0 +1,16 @@
+﻿lesson,rubric_version,seed,all3,basic,strong,K1,K2_proxy,K3,GK1,GK2,GK3,judge_mean,change,change_status,paired_holdout_gain
+1,v2.0_legacy,151212,6,30,18,22,18,10,6.11,6.15,4.07,5.44,ion_scaffold,trial_accepted,0.01549
+2,v2.0_legacy,151423,4,25,17,25,15,8,6.6,6.69,4.17,5.82,ion_scaffold,trial_accepted,0.01414
+3,v2.0_legacy,151634,3,29,17,19,21,11,7.2,6.96,4.47,6.21,ion_scaffold,trial_accepted,0.0163
+4,v2.0_legacy,151845,3,25,13,20,18,7,7.62,7.4,4.68,6.57,formative_feedback,trial_accepted,0.00837
+5,v2.0_legacy,152056,5,22,10,20,17,8,7.62,7.4,5.4,6.81,formative_feedback,trial_accepted,0.00743
+6,v2.1_evidence_guard,152267,3,28,12,25,19,8,7.7,7.68,4.88,6.75,formative_feedback,trial_accepted,0.00451
+7,v2.1_evidence_guard,152478,5,29,17,23,9,12,7.49,7.3,5.09,6.63,concept_clarifier,trial_accepted,0.00851
+8,v2.1_evidence_guard,152689,7,30,17,22,17,14,7.43,7.25,5.26,6.65,concept_clarifier,trial_accepted,0.00693
+9,v2.1_evidence_guard,152900,7,30,15,24,22,12,7.87,7.6,5.42,6.96,pair_guidance,trial_accepted,0.01044
+10,v2.1_evidence_guard,153111,9,31,13,30,21,15,8.62,8.24,5.57,7.48,pair_guidance,trial_accepted,0.00884
+11,v2.1_evidence_guard,153322,8,33,16,26,17,16,8.69,8.5,5.61,7.6,scan_rehearsal,trial_rejected,0.0009
+12,v2.1_evidence_guard,153533,6,33,22,26,17,13,8.28,7.92,5.48,7.23,scan_rehearsal,trial_rejected,0.0009
+13,v2.1_evidence_guard,153744,9,27,16,26,16,20,8.18,7.99,5.57,7.25,scan_rehearsal,trial_rejected,0.0009
+14,v2.1_evidence_guard,153955,4,26,12,25,19,8,8.5,8.44,5.53,7.49,scan_rehearsal,trial_rejected,0.0009
+15,v2.1_evidence_guard,154166,4,33,16,19,18,18,8.63,8.71,5.68,7.67,scan_rehearsal,trial_rejected,0.0009

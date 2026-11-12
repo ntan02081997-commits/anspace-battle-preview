@@ -2166,6 +2166,1106 @@
           "evidence": "45 minutes elapsed; teacher reflection begins"
         }
       ]
+    },
+    {
+      "lesson": 11,
+      "seed": 153322,
+      "rubric_version": "v2.1_evidence_guard",
+      "lesson_metrics": {
+        "seed": 153322,
+        "policy": {
+          "concept_clarifier": 2,
+          "pair_guidance": 2,
+          "ion_scaffold": 3,
+          "formative_feedback": 3,
+          "scan_rehearsal": 0
+        },
+        "requirements": {
+          "K1_concept_notation": 26,
+          "K2_four_rules_proxy": 17,
+          "K3_application": 16
+        },
+        "competencies": {
+          "self_learning": 21,
+          "collaboration": 17,
+          "chemical_recognition": 26,
+          "application": 16,
+          "problem_solving": 16
+        },
+        "qualities": {
+          "diligence": 26,
+          "honesty_observed_proxy": 33,
+          "responsibility": 32
+        },
+        "basic": 33,
+        "strong": 16,
+        "all3": 8,
+        "correct_by_question": [
+          20,
+          26,
+          25,
+          38,
+          21
+        ],
+        "mean_gain": 0.207,
+        "misconceptions": 13,
+        "ion_recovered": 11,
+        "feedback_recovered": 0,
+        "home_task_status": "assigned; not yet assessed",
+        "time_minutes": 45
+      },
+      "paired_baseline_metrics": {
+        "seed": 153322,
+        "policy": {
+          "concept_clarifier": 0,
+          "pair_guidance": 0,
+          "ion_scaffold": 0,
+          "formative_feedback": 0,
+          "scan_rehearsal": 0
+        },
+        "requirements": {
+          "K1_concept_notation": 24,
+          "K2_four_rules_proxy": 17,
+          "K3_application": 13
+        },
+        "competencies": {
+          "self_learning": 19,
+          "collaboration": 17,
+          "chemical_recognition": 24,
+          "application": 13,
+          "problem_solving": 13
+        },
+        "qualities": {
+          "diligence": 26,
+          "honesty_observed_proxy": 33,
+          "responsibility": 32
+        },
+        "basic": 32,
+        "strong": 16,
+        "all3": 5,
+        "correct_by_question": [
+          20,
+          25,
+          25,
+          38,
+          18
+        ],
+        "mean_gain": 0.1433,
+        "misconceptions": 19,
+        "ion_recovered": 9,
+        "feedback_recovered": 0,
+        "home_task_status": "assigned; not yet assessed",
+        "time_minutes": 45
+      },
+      "judges": [
+        {
+          "judge": "GK1_chuyen_mon",
+          "criteria": {
+            "scientific_correctness_4": 3.8,
+            "knowledge_objectives_2": 1.02,
+            "misconception_handling_2": 1.89,
+            "differentiated_practice_2": 1.98
+          },
+          "score_10": 8.69,
+          "evidence": {
+            "K1": 26,
+            "K2_proxy": 17,
+            "K3": 16,
+            "basic": 33,
+            "misconception_SO4": 13,
+            "ion_recovered": 11,
+            "feedback_recovered": 0,
+            "mean_gain": 0.207
+          }
+        },
+        {
+          "judge": "GK2_su_pham",
+          "criteria": {
+            "four_activity_flow_2": 1.9,
+            "active_learning_3": 2.4,
+            "scaffolding_and_response_3": 2.69,
+            "time_and_materials_2": 1.51
+          },
+          "score_10": 8.5,
+          "evidence": {
+            "K1": 26,
+            "K2_proxy": 17,
+            "K3": 16,
+            "basic": 33,
+            "misconception_SO4": 13,
+            "ion_recovered": 11,
+            "feedback_recovered": 0,
+            "mean_gain": 0.207
+          }
+        },
+        {
+          "judge": "GK3_danh_gia",
+          "criteria": {
+            "evidence_for_objectives_3": 2.11,
+            "prepost_progress_2": 1.07,
+            "use_feedback_to_adapt_3": 1.03,
+            "competency_quality_evidence_2": 1.4
+          },
+          "score_10": 5.61,
+          "evidence": {
+            "K1": 26,
+            "K2_proxy": 17,
+            "K3": 16,
+            "basic": 33,
+            "misconception_SO4": 13,
+            "ion_recovered": 11,
+            "feedback_recovered": 0,
+            "mean_gain": 0.207
+          }
+        }
+      ],
+      "judge_mean": 7.6,
+      "score_delta_vs_baseline": 0.09614,
+      "reflection": {
+        "strengths": [
+          "Bốn hoạt động và thời lượng của KHBD được giữ nguyên.",
+          "Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà."
+        ],
+        "weaknesses": [
+          "12/38 chưa đạt minh chứng khái niệm/biểu diễn.",
+          "21/38 chưa đạt minh chứng 4 quy tắc (proxy).",
+          "22/38 chưa đạt minh chứng vận dụng.",
+          "13/38 nhầm/sai SO₄²⁻ ban đầu."
+        ],
+        "judge_feedback": [
+          "GK1_chuyen_mon: 8.69/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=1.02, misconception_handling_2=1.89, differentiated_practice_2=1.98",
+          "GK2_su_pham: 8.5/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.4, scaffolding_and_response_3=2.69, time_and_materials_2=1.51",
+          "GK3_danh_gia: 5.61/10; tiêu chí: evidence_for_objectives_3=2.11, prepost_progress_2=1.07, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.4"
+        ],
+        "change_for_next_lesson": {
+          "status": "trial_rejected",
+          "action": "scan_rehearsal",
+          "target_KHBD_section": "HĐ 3",
+          "proposed_revision": "Cho HS thử tư thế giơ thẻ trong lúc phát thẻ QR để giảm lỗi quét; không tăng 12 phút.",
+          "paired_holdout_gain": 0.0009,
+          "reason": "Targets a specific weakness; evaluated against unchanged policy on 12 paired held-out cohorts",
+          "source_preserved": true
+        },
+        "next_policy": {
+          "concept_clarifier": 2,
+          "pair_guidance": 2,
+          "ion_scaffold": 3,
+          "formative_feedback": 3,
+          "scan_rehearsal": 0
+        }
+      },
+      "events": [
+        {
+          "minute": 0,
+          "phase": "opening",
+          "evidence": "GV uses NaCl–H₂O question; pupils recall electron transfer vs polarization"
+        },
+        {
+          "minute": 4,
+          "phase": "PHT1",
+          "evidence": "2-minute individual + 2-minute pair; teacher checks definition and notation"
+        },
+        {
+          "minute": 13,
+          "phase": "PHT2",
+          "evidence": "SO₂ modeled; Fe, H₂SO₄, SO₄²⁻; optional NH₄⁺ and explain ion sum"
+        },
+        {
+          "minute": 29,
+          "phase": "Wayground Paper",
+          "evidence": "13/38 pupils initially confuse ion total or miss SO₄²⁻ task; QR five skill-proxy items"
+        },
+        {
+          "minute": 41,
+          "phase": "H₂O₂ homework/recap",
+          "evidence": "4 true/false statements assigned for NEXT lesson; not graded now"
+        },
+        {
+          "minute": 45,
+          "phase": "end",
+          "evidence": "45 minutes elapsed; teacher reflection begins"
+        }
+      ]
+    },
+    {
+      "lesson": 12,
+      "seed": 153533,
+      "rubric_version": "v2.1_evidence_guard",
+      "lesson_metrics": {
+        "seed": 153533,
+        "policy": {
+          "concept_clarifier": 2,
+          "pair_guidance": 2,
+          "ion_scaffold": 3,
+          "formative_feedback": 3,
+          "scan_rehearsal": 0
+        },
+        "requirements": {
+          "K1_concept_notation": 26,
+          "K2_four_rules_proxy": 17,
+          "K3_application": 13
+        },
+        "competencies": {
+          "self_learning": 18,
+          "collaboration": 13,
+          "chemical_recognition": 26,
+          "application": 13,
+          "problem_solving": 13
+        },
+        "qualities": {
+          "diligence": 26,
+          "honesty_observed_proxy": 34,
+          "responsibility": 28
+        },
+        "basic": 33,
+        "strong": 22,
+        "all3": 6,
+        "correct_by_question": [
+          28,
+          26,
+          28,
+          38,
+          17
+        ],
+        "mean_gain": 0.2064,
+        "misconceptions": 17,
+        "ion_recovered": 10,
+        "feedback_recovered": 0,
+        "home_task_status": "assigned; not yet assessed",
+        "time_minutes": 45
+      },
+      "paired_baseline_metrics": {
+        "seed": 153533,
+        "policy": {
+          "concept_clarifier": 0,
+          "pair_guidance": 0,
+          "ion_scaffold": 0,
+          "formative_feedback": 0,
+          "scan_rehearsal": 0
+        },
+        "requirements": {
+          "K1_concept_notation": 24,
+          "K2_four_rules_proxy": 17,
+          "K3_application": 11
+        },
+        "competencies": {
+          "self_learning": 17,
+          "collaboration": 12,
+          "chemical_recognition": 24,
+          "application": 11,
+          "problem_solving": 11
+        },
+        "qualities": {
+          "diligence": 26,
+          "honesty_observed_proxy": 34,
+          "responsibility": 28
+        },
+        "basic": 30,
+        "strong": 20,
+        "all3": 4,
+        "correct_by_question": [
+          26,
+          24,
+          28,
+          38,
+          15
+        ],
+        "mean_gain": 0.1423,
+        "misconceptions": 21,
+        "ion_recovered": 6,
+        "feedback_recovered": 0,
+        "home_task_status": "assigned; not yet assessed",
+        "time_minutes": 45
+      },
+      "judges": [
+        {
+          "judge": "GK1_chuyen_mon",
+          "criteria": {
+            "scientific_correctness_4": 3.8,
+            "knowledge_objectives_2": 0.96,
+            "misconception_handling_2": 1.54,
+            "differentiated_practice_2": 1.98
+          },
+          "score_10": 8.28,
+          "evidence": {
+            "K1": 26,
+            "K2_proxy": 17,
+            "K3": 13,
+            "basic": 33,
+            "misconception_SO4": 17,
+            "ion_recovered": 10,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2064
+          }
+        },
+        {
+          "judge": "GK2_su_pham",
+          "criteria": {
+            "four_activity_flow_2": 1.9,
+            "active_learning_3": 2.13,
+            "scaffolding_and_response_3": 2.38,
+            "time_and_materials_2": 1.51
+          },
+          "score_10": 7.92,
+          "evidence": {
+            "K1": 26,
+            "K2_proxy": 17,
+            "K3": 13,
+            "basic": 33,
+            "misconception_SO4": 17,
+            "ion_recovered": 10,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2064
+          }
+        },
+        {
+          "judge": "GK3_danh_gia",
+          "criteria": {
+            "evidence_for_objectives_3": 2.09,
+            "prepost_progress_2": 1.07,
+            "use_feedback_to_adapt_3": 1.03,
+            "competency_quality_evidence_2": 1.29
+          },
+          "score_10": 5.48,
+          "evidence": {
+            "K1": 26,
+            "K2_proxy": 17,
+            "K3": 13,
+            "basic": 33,
+            "misconception_SO4": 17,
+            "ion_recovered": 10,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2064
+          }
+        }
+      ],
+      "judge_mean": 7.23,
+      "score_delta_vs_baseline": 0.09221,
+      "reflection": {
+        "strengths": [
+          "Bốn hoạt động và thời lượng của KHBD được giữ nguyên.",
+          "Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà."
+        ],
+        "weaknesses": [
+          "12/38 chưa đạt minh chứng khái niệm/biểu diễn.",
+          "21/38 chưa đạt minh chứng 4 quy tắc (proxy).",
+          "25/38 chưa đạt minh chứng vận dụng.",
+          "17/38 nhầm/sai SO₄²⁻ ban đầu."
+        ],
+        "judge_feedback": [
+          "GK1_chuyen_mon: 8.28/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=0.96, misconception_handling_2=1.54, differentiated_practice_2=1.98",
+          "GK2_su_pham: 7.92/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.13, scaffolding_and_response_3=2.38, time_and_materials_2=1.51",
+          "GK3_danh_gia: 5.48/10; tiêu chí: evidence_for_objectives_3=2.09, prepost_progress_2=1.07, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.29"
+        ],
+        "change_for_next_lesson": {
+          "status": "trial_rejected",
+          "action": "scan_rehearsal",
+          "target_KHBD_section": "HĐ 3",
+          "proposed_revision": "Cho HS thử tư thế giơ thẻ trong lúc phát thẻ QR để giảm lỗi quét; không tăng 12 phút.",
+          "paired_holdout_gain": 0.0009,
+          "reason": "Targets a specific weakness; evaluated against unchanged policy on 12 paired held-out cohorts",
+          "source_preserved": true
+        },
+        "next_policy": {
+          "concept_clarifier": 2,
+          "pair_guidance": 2,
+          "ion_scaffold": 3,
+          "formative_feedback": 3,
+          "scan_rehearsal": 0
+        }
+      },
+      "events": [
+        {
+          "minute": 0,
+          "phase": "opening",
+          "evidence": "GV uses NaCl–H₂O question; pupils recall electron transfer vs polarization"
+        },
+        {
+          "minute": 4,
+          "phase": "PHT1",
+          "evidence": "2-minute individual + 2-minute pair; teacher checks definition and notation"
+        },
+        {
+          "minute": 13,
+          "phase": "PHT2",
+          "evidence": "SO₂ modeled; Fe, H₂SO₄, SO₄²⁻; optional NH₄⁺ and explain ion sum"
+        },
+        {
+          "minute": 29,
+          "phase": "Wayground Paper",
+          "evidence": "17/38 pupils initially confuse ion total or miss SO₄²⁻ task; QR five skill-proxy items"
+        },
+        {
+          "minute": 41,
+          "phase": "H₂O₂ homework/recap",
+          "evidence": "4 true/false statements assigned for NEXT lesson; not graded now"
+        },
+        {
+          "minute": 45,
+          "phase": "end",
+          "evidence": "45 minutes elapsed; teacher reflection begins"
+        }
+      ]
+    },
+    {
+      "lesson": 13,
+      "seed": 153744,
+      "rubric_version": "v2.1_evidence_guard",
+      "lesson_metrics": {
+        "seed": 153744,
+        "policy": {
+          "concept_clarifier": 2,
+          "pair_guidance": 2,
+          "ion_scaffold": 3,
+          "formative_feedback": 3,
+          "scan_rehearsal": 0
+        },
+        "requirements": {
+          "K1_concept_notation": 26,
+          "K2_four_rules_proxy": 16,
+          "K3_application": 20
+        },
+        "competencies": {
+          "self_learning": 17,
+          "collaboration": 15,
+          "chemical_recognition": 26,
+          "application": 20,
+          "problem_solving": 20
+        },
+        "qualities": {
+          "diligence": 31,
+          "honesty_observed_proxy": 35,
+          "responsibility": 30
+        },
+        "basic": 27,
+        "strong": 16,
+        "all3": 9,
+        "correct_by_question": [
+          26,
+          23,
+          19,
+          38,
+          18
+        ],
+        "mean_gain": 0.2027,
+        "misconceptions": 14,
+        "ion_recovered": 6,
+        "feedback_recovered": 0,
+        "home_task_status": "assigned; not yet assessed",
+        "time_minutes": 45
+      },
+      "paired_baseline_metrics": {
+        "seed": 153744,
+        "policy": {
+          "concept_clarifier": 0,
+          "pair_guidance": 0,
+          "ion_scaffold": 0,
+          "formative_feedback": 0,
+          "scan_rehearsal": 0
+        },
+        "requirements": {
+          "K1_concept_notation": 22,
+          "K2_four_rules_proxy": 16,
+          "K3_application": 17
+        },
+        "competencies": {
+          "self_learning": 15,
+          "collaboration": 14,
+          "chemical_recognition": 22,
+          "application": 17,
+          "problem_solving": 17
+        },
+        "qualities": {
+          "diligence": 31,
+          "honesty_observed_proxy": 35,
+          "responsibility": 30
+        },
+        "basic": 25,
+        "strong": 13,
+        "all3": 7,
+        "correct_by_question": [
+          24,
+          19,
+          19,
+          38,
+          17
+        ],
+        "mean_gain": 0.14,
+        "misconceptions": 18,
+        "ion_recovered": 4,
+        "feedback_recovered": 0,
+        "home_task_status": "assigned; not yet assessed",
+        "time_minutes": 45
+      },
+      "judges": [
+        {
+          "judge": "GK1_chuyen_mon",
+          "criteria": {
+            "scientific_correctness_4": 3.8,
+            "knowledge_objectives_2": 1.07,
+            "misconception_handling_2": 1.33,
+            "differentiated_practice_2": 1.98
+          },
+          "score_10": 8.18,
+          "evidence": {
+            "K1": 26,
+            "K2_proxy": 16,
+            "K3": 20,
+            "basic": 27,
+            "misconception_SO4": 14,
+            "ion_recovered": 6,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2027
+          }
+        },
+        {
+          "judge": "GK2_su_pham",
+          "criteria": {
+            "four_activity_flow_2": 1.9,
+            "active_learning_3": 2.4,
+            "scaffolding_and_response_3": 2.18,
+            "time_and_materials_2": 1.51
+          },
+          "score_10": 7.99,
+          "evidence": {
+            "K1": 26,
+            "K2_proxy": 16,
+            "K3": 20,
+            "basic": 27,
+            "misconception_SO4": 14,
+            "ion_recovered": 6,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2027
+          }
+        },
+        {
+          "judge": "GK3_danh_gia",
+          "criteria": {
+            "evidence_for_objectives_3": 2.14,
+            "prepost_progress_2": 1.06,
+            "use_feedback_to_adapt_3": 1.03,
+            "competency_quality_evidence_2": 1.34
+          },
+          "score_10": 5.57,
+          "evidence": {
+            "K1": 26,
+            "K2_proxy": 16,
+            "K3": 20,
+            "basic": 27,
+            "misconception_SO4": 14,
+            "ion_recovered": 6,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2027
+          }
+        }
+      ],
+      "judge_mean": 7.25,
+      "score_delta_vs_baseline": 0.08514,
+      "reflection": {
+        "strengths": [
+          "Bốn hoạt động và thời lượng của KHBD được giữ nguyên.",
+          "Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà."
+        ],
+        "weaknesses": [
+          "12/38 chưa đạt minh chứng khái niệm/biểu diễn.",
+          "22/38 chưa đạt minh chứng 4 quy tắc (proxy).",
+          "18/38 chưa đạt minh chứng vận dụng.",
+          "14/38 nhầm/sai SO₄²⁻ ban đầu."
+        ],
+        "judge_feedback": [
+          "GK1_chuyen_mon: 8.18/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=1.07, misconception_handling_2=1.33, differentiated_practice_2=1.98",
+          "GK2_su_pham: 7.99/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.4, scaffolding_and_response_3=2.18, time_and_materials_2=1.51",
+          "GK3_danh_gia: 5.57/10; tiêu chí: evidence_for_objectives_3=2.14, prepost_progress_2=1.06, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.34"
+        ],
+        "change_for_next_lesson": {
+          "status": "trial_rejected",
+          "action": "scan_rehearsal",
+          "target_KHBD_section": "HĐ 3",
+          "proposed_revision": "Cho HS thử tư thế giơ thẻ trong lúc phát thẻ QR để giảm lỗi quét; không tăng 12 phút.",
+          "paired_holdout_gain": 0.0009,
+          "reason": "Targets a specific weakness; evaluated against unchanged policy on 12 paired held-out cohorts",
+          "source_preserved": true
+        },
+        "next_policy": {
+          "concept_clarifier": 2,
+          "pair_guidance": 2,
+          "ion_scaffold": 3,
+          "formative_feedback": 3,
+          "scan_rehearsal": 0
+        }
+      },
+      "events": [
+        {
+          "minute": 0,
+          "phase": "opening",
+          "evidence": "GV uses NaCl–H₂O question; pupils recall electron transfer vs polarization"
+        },
+        {
+          "minute": 4,
+          "phase": "PHT1",
+          "evidence": "2-minute individual + 2-minute pair; teacher checks definition and notation"
+        },
+        {
+          "minute": 13,
+          "phase": "PHT2",
+          "evidence": "SO₂ modeled; Fe, H₂SO₄, SO₄²⁻; optional NH₄⁺ and explain ion sum"
+        },
+        {
+          "minute": 29,
+          "phase": "Wayground Paper",
+          "evidence": "14/38 pupils initially confuse ion total or miss SO₄²⁻ task; QR five skill-proxy items"
+        },
+        {
+          "minute": 41,
+          "phase": "H₂O₂ homework/recap",
+          "evidence": "4 true/false statements assigned for NEXT lesson; not graded now"
+        },
+        {
+          "minute": 45,
+          "phase": "end",
+          "evidence": "45 minutes elapsed; teacher reflection begins"
+        }
+      ]
+    },
+    {
+      "lesson": 14,
+      "seed": 153955,
+      "rubric_version": "v2.1_evidence_guard",
+      "lesson_metrics": {
+        "seed": 153955,
+        "policy": {
+          "concept_clarifier": 2,
+          "pair_guidance": 2,
+          "ion_scaffold": 3,
+          "formative_feedback": 3,
+          "scan_rehearsal": 0
+        },
+        "requirements": {
+          "K1_concept_notation": 25,
+          "K2_four_rules_proxy": 19,
+          "K3_application": 8
+        },
+        "competencies": {
+          "self_learning": 18,
+          "collaboration": 16,
+          "chemical_recognition": 25,
+          "application": 8,
+          "problem_solving": 8
+        },
+        "qualities": {
+          "diligence": 30,
+          "honesty_observed_proxy": 31,
+          "responsibility": 29
+        },
+        "basic": 26,
+        "strong": 12,
+        "all3": 4,
+        "correct_by_question": [
+          23,
+          18,
+          19,
+          38,
+          14
+        ],
+        "mean_gain": 0.2069,
+        "misconceptions": 20,
+        "ion_recovered": 16,
+        "feedback_recovered": 0,
+        "home_task_status": "assigned; not yet assessed",
+        "time_minutes": 45
+      },
+      "paired_baseline_metrics": {
+        "seed": 153955,
+        "policy": {
+          "concept_clarifier": 0,
+          "pair_guidance": 0,
+          "ion_scaffold": 0,
+          "formative_feedback": 0,
+          "scan_rehearsal": 0
+        },
+        "requirements": {
+          "K1_concept_notation": 20,
+          "K2_four_rules_proxy": 19,
+          "K3_application": 7
+        },
+        "competencies": {
+          "self_learning": 13,
+          "collaboration": 15,
+          "chemical_recognition": 20,
+          "application": 7,
+          "problem_solving": 7
+        },
+        "qualities": {
+          "diligence": 30,
+          "honesty_observed_proxy": 31,
+          "responsibility": 29
+        },
+        "basic": 24,
+        "strong": 11,
+        "all3": 3,
+        "correct_by_question": [
+          22,
+          17,
+          19,
+          38,
+          12
+        ],
+        "mean_gain": 0.142,
+        "misconceptions": 23,
+        "ion_recovered": 15,
+        "feedback_recovered": 0,
+        "home_task_status": "assigned; not yet assessed",
+        "time_minutes": 45
+      },
+      "judges": [
+        {
+          "judge": "GK1_chuyen_mon",
+          "criteria": {
+            "scientific_correctness_4": 3.8,
+            "knowledge_objectives_2": 0.89,
+            "misconception_handling_2": 1.83,
+            "differentiated_practice_2": 1.98
+          },
+          "score_10": 8.5,
+          "evidence": {
+            "K1": 25,
+            "K2_proxy": 19,
+            "K3": 8,
+            "basic": 26,
+            "misconception_SO4": 20,
+            "ion_recovered": 16,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2069
+          }
+        },
+        {
+          "judge": "GK2_su_pham",
+          "criteria": {
+            "four_activity_flow_2": 1.9,
+            "active_learning_3": 2.4,
+            "scaffolding_and_response_3": 2.63,
+            "time_and_materials_2": 1.51
+          },
+          "score_10": 8.44,
+          "evidence": {
+            "K1": 25,
+            "K2_proxy": 19,
+            "K3": 8,
+            "basic": 26,
+            "misconception_SO4": 20,
+            "ion_recovered": 16,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2069
+          }
+        },
+        {
+          "judge": "GK3_danh_gia",
+          "criteria": {
+            "evidence_for_objectives_3": 2.06,
+            "prepost_progress_2": 1.07,
+            "use_feedback_to_adapt_3": 1.03,
+            "competency_quality_evidence_2": 1.37
+          },
+          "score_10": 5.53,
+          "evidence": {
+            "K1": 25,
+            "K2_proxy": 19,
+            "K3": 8,
+            "basic": 26,
+            "misconception_SO4": 20,
+            "ion_recovered": 16,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2069
+          }
+        }
+      ],
+      "judge_mean": 7.49,
+      "score_delta_vs_baseline": 0.07098,
+      "reflection": {
+        "strengths": [
+          "Bốn hoạt động và thời lượng của KHBD được giữ nguyên.",
+          "Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà."
+        ],
+        "weaknesses": [
+          "13/38 chưa đạt minh chứng khái niệm/biểu diễn.",
+          "19/38 chưa đạt minh chứng 4 quy tắc (proxy).",
+          "30/38 chưa đạt minh chứng vận dụng.",
+          "20/38 nhầm/sai SO₄²⁻ ban đầu."
+        ],
+        "judge_feedback": [
+          "GK1_chuyen_mon: 8.5/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=0.89, misconception_handling_2=1.83, differentiated_practice_2=1.98",
+          "GK2_su_pham: 8.44/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.4, scaffolding_and_response_3=2.63, time_and_materials_2=1.51",
+          "GK3_danh_gia: 5.53/10; tiêu chí: evidence_for_objectives_3=2.06, prepost_progress_2=1.07, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.37"
+        ],
+        "change_for_next_lesson": {
+          "status": "trial_rejected",
+          "action": "scan_rehearsal",
+          "target_KHBD_section": "HĐ 3",
+          "proposed_revision": "Cho HS thử tư thế giơ thẻ trong lúc phát thẻ QR để giảm lỗi quét; không tăng 12 phút.",
+          "paired_holdout_gain": 0.0009,
+          "reason": "Targets a specific weakness; evaluated against unchanged policy on 12 paired held-out cohorts",
+          "source_preserved": true
+        },
+        "next_policy": {
+          "concept_clarifier": 2,
+          "pair_guidance": 2,
+          "ion_scaffold": 3,
+          "formative_feedback": 3,
+          "scan_rehearsal": 0
+        }
+      },
+      "events": [
+        {
+          "minute": 0,
+          "phase": "opening",
+          "evidence": "GV uses NaCl–H₂O question; pupils recall electron transfer vs polarization"
+        },
+        {
+          "minute": 4,
+          "phase": "PHT1",
+          "evidence": "2-minute individual + 2-minute pair; teacher checks definition and notation"
+        },
+        {
+          "minute": 13,
+          "phase": "PHT2",
+          "evidence": "SO₂ modeled; Fe, H₂SO₄, SO₄²⁻; optional NH₄⁺ and explain ion sum"
+        },
+        {
+          "minute": 29,
+          "phase": "Wayground Paper",
+          "evidence": "20/38 pupils initially confuse ion total or miss SO₄²⁻ task; QR five skill-proxy items"
+        },
+        {
+          "minute": 41,
+          "phase": "H₂O₂ homework/recap",
+          "evidence": "4 true/false statements assigned for NEXT lesson; not graded now"
+        },
+        {
+          "minute": 45,
+          "phase": "end",
+          "evidence": "45 minutes elapsed; teacher reflection begins"
+        }
+      ]
+    },
+    {
+      "lesson": 15,
+      "seed": 154166,
+      "rubric_version": "v2.1_evidence_guard",
+      "lesson_metrics": {
+        "seed": 154166,
+        "policy": {
+          "concept_clarifier": 2,
+          "pair_guidance": 2,
+          "ion_scaffold": 3,
+          "formative_feedback": 3,
+          "scan_rehearsal": 0
+        },
+        "requirements": {
+          "K1_concept_notation": 19,
+          "K2_four_rules_proxy": 18,
+          "K3_application": 18
+        },
+        "competencies": {
+          "self_learning": 15,
+          "collaboration": 21,
+          "chemical_recognition": 19,
+          "application": 18,
+          "problem_solving": 18
+        },
+        "qualities": {
+          "diligence": 28,
+          "honesty_observed_proxy": 36,
+          "responsibility": 29
+        },
+        "basic": 33,
+        "strong": 16,
+        "all3": 4,
+        "correct_by_question": [
+          26,
+          25,
+          27,
+          38,
+          15
+        ],
+        "mean_gain": 0.2031,
+        "misconceptions": 13,
+        "ion_recovered": 11,
+        "feedback_recovered": 0,
+        "home_task_status": "assigned; not yet assessed",
+        "time_minutes": 45
+      },
+      "paired_baseline_metrics": {
+        "seed": 154166,
+        "policy": {
+          "concept_clarifier": 0,
+          "pair_guidance": 0,
+          "ion_scaffold": 0,
+          "formative_feedback": 0,
+          "scan_rehearsal": 0
+        },
+        "requirements": {
+          "K1_concept_notation": 17,
+          "K2_four_rules_proxy": 18,
+          "K3_application": 13
+        },
+        "competencies": {
+          "self_learning": 15,
+          "collaboration": 20,
+          "chemical_recognition": 17,
+          "application": 13,
+          "problem_solving": 13
+        },
+        "qualities": {
+          "diligence": 28,
+          "honesty_observed_proxy": 36,
+          "responsibility": 29
+        },
+        "basic": 31,
+        "strong": 14,
+        "all3": 4,
+        "correct_by_question": [
+          22,
+          24,
+          27,
+          38,
+          15
+        ],
+        "mean_gain": 0.1412,
+        "misconceptions": 20,
+        "ion_recovered": 14,
+        "feedback_recovered": 0,
+        "home_task_status": "assigned; not yet assessed",
+        "time_minutes": 45
+      },
+      "judges": [
+        {
+          "judge": "GK1_chuyen_mon",
+          "criteria": {
+            "scientific_correctness_4": 3.8,
+            "knowledge_objectives_2": 0.96,
+            "misconception_handling_2": 1.89,
+            "differentiated_practice_2": 1.98
+          },
+          "score_10": 8.63,
+          "evidence": {
+            "K1": 19,
+            "K2_proxy": 18,
+            "K3": 18,
+            "basic": 33,
+            "misconception_SO4": 13,
+            "ion_recovered": 11,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2031
+          }
+        },
+        {
+          "judge": "GK2_su_pham",
+          "criteria": {
+            "four_activity_flow_2": 1.9,
+            "active_learning_3": 2.61,
+            "scaffolding_and_response_3": 2.69,
+            "time_and_materials_2": 1.51
+          },
+          "score_10": 8.71,
+          "evidence": {
+            "K1": 19,
+            "K2_proxy": 18,
+            "K3": 18,
+            "basic": 33,
+            "misconception_SO4": 13,
+            "ion_recovered": 11,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2031
+          }
+        },
+        {
+          "judge": "GK3_danh_gia",
+          "criteria": {
+            "evidence_for_objectives_3": 2.09,
+            "prepost_progress_2": 1.06,
+            "use_feedback_to_adapt_3": 1.03,
+            "competency_quality_evidence_2": 1.5
+          },
+          "score_10": 5.68,
+          "evidence": {
+            "K1": 19,
+            "K2_proxy": 18,
+            "K3": 18,
+            "basic": 33,
+            "misconception_SO4": 13,
+            "ion_recovered": 11,
+            "feedback_recovered": 0,
+            "mean_gain": 0.2031
+          }
+        }
+      ],
+      "judge_mean": 7.67,
+      "score_delta_vs_baseline": 0.05743,
+      "reflection": {
+        "strengths": [
+          "Bốn hoạt động và thời lượng của KHBD được giữ nguyên.",
+          "Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà."
+        ],
+        "weaknesses": [
+          "19/38 chưa đạt minh chứng khái niệm/biểu diễn.",
+          "20/38 chưa đạt minh chứng 4 quy tắc (proxy).",
+          "20/38 chưa đạt minh chứng vận dụng.",
+          "13/38 nhầm/sai SO₄²⁻ ban đầu."
+        ],
+        "judge_feedback": [
+          "GK1_chuyen_mon: 8.63/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=0.96, misconception_handling_2=1.89, differentiated_practice_2=1.98",
+          "GK2_su_pham: 8.71/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.61, scaffolding_and_response_3=2.69, time_and_materials_2=1.51",
+          "GK3_danh_gia: 5.68/10; tiêu chí: evidence_for_objectives_3=2.09, prepost_progress_2=1.06, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.5"
+        ],
+        "change_for_next_lesson": {
+          "status": "trial_rejected",
+          "action": "scan_rehearsal",
+          "target_KHBD_section": "HĐ 3",
+          "proposed_revision": "Cho HS thử tư thế giơ thẻ trong lúc phát thẻ QR để giảm lỗi quét; không tăng 12 phút.",
+          "paired_holdout_gain": 0.0009,
+          "reason": "Targets a specific weakness; evaluated against unchanged policy on 12 paired held-out cohorts",
+          "source_preserved": true
+        },
+        "next_policy": {
+          "concept_clarifier": 2,
+          "pair_guidance": 2,
+          "ion_scaffold": 3,
+          "formative_feedback": 3,
+          "scan_rehearsal": 0
+        }
+      },
+      "events": [
+        {
+          "minute": 0,
+          "phase": "opening",
+          "evidence": "GV uses NaCl–H₂O question; pupils recall electron transfer vs polarization"
+        },
+        {
+          "minute": 4,
+          "phase": "PHT1",
+          "evidence": "2-minute individual + 2-minute pair; teacher checks definition and notation"
+        },
+        {
+          "minute": 13,
+          "phase": "PHT2",
+          "evidence": "SO₂ modeled; Fe, H₂SO₄, SO₄²⁻; optional NH₄⁺ and explain ion sum"
+        },
+        {
+          "minute": 29,
+          "phase": "Wayground Paper",
+          "evidence": "13/38 pupils initially confuse ion total or miss SO₄²⁻ task; QR five skill-proxy items"
+        },
+        {
+          "minute": 41,
+          "phase": "H₂O₂ homework/recap",
+          "evidence": "4 true/false statements assigned for NEXT lesson; not graded now"
+        },
+        {
+          "minute": 45,
+          "phase": "end",
+          "evidence": "45 minutes elapsed; teacher reflection begins"
+        }
+      ]
     }
   ]
 }
