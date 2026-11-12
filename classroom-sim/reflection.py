@@ -68,7 +68,11 @@ def simulate(seed, policy):
         p["ion_misconception"]=not p["pht2"]["SO4_2minus"]
         if p["ion_misconception"]:
             learn(p,"ions",.10+.06*policy["ion_scaffold"])
+            p["ion_recovery"]=chance(p["_r"],p,"ions",12)
+        else:
+            p["ion_recovery"]=True
     errors=sum(p["ion_misconception"] for p in students)
+    recovered=sum(p["ion_recovery"] for p in students if p["ion_misconception"])
     events.append({"minute":29,"phase":"Wayground Paper","evidence":f"{errors}/38 pupils initially confuse ion total or miss SO₄²⁻ task; QR five skill-proxy items"})
     for p in students:
         p["answers"]=[]
@@ -78,6 +82,9 @@ def simulate(seed, policy):
         p["correct_count"]=sum(a==b for a,b in zip(p["answers"],CORRECT))
         if p["answers"][3]!=CORRECT[3]:
             learn(p,"ions",.06+.045*policy["formative_feedback"])
+            p["feedback_recovery"]=chance(p["_r"],p,"ions",13)
+        else:
+            p["feedback_recovery"]=True
         p["after"]=dict(p["skills"])
         q=[a==b for a,b in zip(p["answers"],CORRECT)]
         h1,h2=p["pht1"],p["pht2"]
@@ -111,7 +118,10 @@ def simulate(seed, policy):
         "requirements":req,"competencies":comp,"qualities":qual,"all3":all3,
         "basic":basic,"strong":strong,"correct_by_question":correct_by_question,
         "mean_gain":round(statistics.mean(sum(p["after"][k]-p["before"][k] for k in p["before"])/6 for p in students),4),
-        "misconceptions":errors,"home_task_status":"assigned; not yet assessed",
+        "misconceptions":errors,"ion_recovered":recovered,
+        "feedback_recovered":sum(p["feedback_recovery"] for p in students if p["answers"][3]!=CORRECT[3]),
+        "feedback_missed":sum(p["answers"][3]!=CORRECT[3] for p in students),
+        "home_task_status":"assigned; not yet assessed",
         "time_minutes":sum(SLOTS.values())}
 
 def grade(s):
@@ -122,23 +132,25 @@ def grade(s):
     k2=req["K2_four_rules_proxy"]/n
     k3=req["K3_application"]/n
     engagement=sum(p["participation"] for p in s["students"])/n
+    ion_recovery_rate=s["ion_recovered"]/max(1,s["misconceptions"])
+    feedback_recovery_rate=s["feedback_recovered"]/max(1,s["feedback_missed"])
     # Distinct rubric functions; each outputs criteria with observable evidence.
     g1={
        "scientific_correctness_4":3.8,
        "knowledge_objectives_2":round(2*(.3*k1+.35*k2+.35*k3),2),
-       "misconception_handling_2":round(min(2,.55+.37*policy["ion_scaffold"]+.19*policy["concept_clarifier"]),2),
+       "misconception_handling_2":round(min(2,.45+1.35*ion_recovery_rate+.10*policy["ion_scaffold"]),2),
        "differentiated_practice_2":round(min(2,.9+.30*policy["pair_guidance"]+.16*policy["ion_scaffold"]),2),
     }
     g2={
        "four_activity_flow_2":1.9,
        "active_learning_3":round(min(3,.85+2*engagement+.22*policy["pair_guidance"]),2),
-       "scaffolding_and_response_3":round(min(3,.65+.38*policy["ion_scaffold"]+.30*policy["pair_guidance"]+.18*policy["concept_clarifier"]),2),
+       "scaffolding_and_response_3":round(min(3,.65+1.2*ion_recovery_rate+.18*policy["ion_scaffold"]+.24*policy["pair_guidance"]),2),
        "time_and_materials_2":round(max(.3,min(2,1.75+.17*policy["scan_rehearsal"]-.08*max(0,sum(policy.values())-7))),2)
     }
     g3={
        "evidence_for_objectives_3":round(min(3,1.1+.8*(k1+k2+k3)/3+.20*policy["formative_feedback"]),2),
        "prepost_progress_2":round(min(2,.45+3*s["mean_gain"]),2),
-       "use_feedback_to_adapt_3":round(min(3,.55+.54*policy["formative_feedback"]+.18*policy["ion_scaffold"]),2),
+       "use_feedback_to_adapt_3":round(min(3,.55+1.55*feedback_recovery_rate+.16*policy["formative_feedback"]),2),
        "competency_quality_evidence_2":round(min(2,.75+comp["collaboration"]/n+.10*policy["pair_guidance"]),2),
     }
     items=[]
@@ -147,7 +159,9 @@ def grade(s):
         items.append({"judge":name,"criteria":parts,"score_10":total,
              "evidence":{"K1":req["K1_concept_notation"],"K2_proxy":req["K2_four_rules_proxy"],
                          "K3":req["K3_application"],"basic":s["basic"],
-                         "misconception_SO4":s["misconceptions"],"mean_gain":s["mean_gain"]}})
+                         "misconception_SO4":s["misconceptions"],"ion_recovered":s["ion_recovered"],
+                         "feedback_recovered":s["feedback_recovered"],
+                         "mean_gain":s["mean_gain"]}})
     return items
 
 def value(s, judges):
@@ -172,13 +186,19 @@ def propose(s, judges, policy):
 def paired_accept(old, candidate, iteration):
     """Independent fixed holdout seeds; accept if evidence-weighted score doesn't decrease."""
     seeds=[990000+iteration*37+i for i in range(12)]
-    old_vals=[];new_vals=[]
+    old_vals=[];new_vals=[];old_k3=[];new_k3=[];old_all=[];new_all=[]
     for seed in seeds:
         s_old=simulate(seed,old);s_new=simulate(seed,candidate)
         old_vals.append(value(s_old,grade(s_old)))
         new_vals.append(value(s_new,grade(s_new)))
+        old_k3.append(s_old["requirements"]["K3_application"])
+        new_k3.append(s_new["requirements"]["K3_application"])
+        old_all.append(s_old["all3"]);new_all.append(s_new["all3"])
     d=statistics.mean(new_vals)-statistics.mean(old_vals)
-    return d >= .001, round(d,5)
+    # Prevent reward hacking: scores cannot justify lower achievement on held-out pupils.
+    learning_not_worse=(statistics.mean(new_k3)>=statistics.mean(old_k3)
+                        and statistics.mean(new_all)>=statistics.mean(old_all))
+    return (d>=.001 and learning_not_worse),round(d,5)
 
 def reflect(s,judges,old_policy,iteration):
     key=propose(s,judges,old_policy)
@@ -201,6 +221,7 @@ def strip_student(s):
             "basic":s["basic"],"strong":s["strong"],"all3":s["all3"],
             "correct_by_question":s["correct_by_question"],
             "mean_gain":s["mean_gain"],"misconceptions":s["misconceptions"],
+            "ion_recovered":s["ion_recovered"],"feedback_recovered":s["feedback_recovered"],
             "home_task_status":s["home_task_status"],"time_minutes":s["time_minutes"]}
 
 def run(state_path, out_dir, lessons):
@@ -216,6 +237,9 @@ def run(state_path, out_dir, lessons):
             "Judge scores are rubric formulas; they are not independent human or LLM opinions.",
             "Never infer real educational effectiveness from simulation alone."],
           "policy":{k:0 for k in LIMITS},"sessions":[]}
+    for old_session in history["sessions"]:
+        old_session.setdefault("rubric_version","v2.0_legacy")
+    history["schema"]="khbd15-reflection-v2.1"
     for _ in range(lessons):
         i=len(history["sessions"])+1
         seed=151001+i*211
@@ -226,7 +250,7 @@ def run(state_path, out_dir, lessons):
         b_judges=grade(baseline)
         after,rec=reflect(lesson,judges,old,i)
         history["sessions"].append({
-            "lesson":i,"seed":seed,"lesson_metrics":strip_student(lesson),
+            "lesson":i,"seed":seed,"rubric_version":"v2.1_evidence_guard","lesson_metrics":strip_student(lesson),
             "paired_baseline_metrics":strip_student(baseline),
             "judges":judges,"judge_mean":round(statistics.mean(j["score_10"] for j in judges),2),
             "score_delta_vs_baseline":round(value(lesson,judges)-value(baseline,b_judges),5),
@@ -254,7 +278,7 @@ def run(state_path, out_dir, lessons):
     state_path.write_text(json.dumps(history,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     rows=[]
     for x in history["sessions"]:
-        row={"lesson":x["lesson"],"seed":x["seed"],"all3":x["lesson_metrics"]["all3"],
+        row={"lesson":x["lesson"],"rubric_version":x.get("rubric_version","v2.0_legacy"),"seed":x["seed"],"all3":x["lesson_metrics"]["all3"],
             "basic":x["lesson_metrics"]["basic"],"strong":x["lesson_metrics"]["strong"],
             "K1":x["lesson_metrics"]["requirements"]["K1_concept_notation"],
             "K2_proxy":x["lesson_metrics"]["requirements"]["K2_four_rules_proxy"],
@@ -269,7 +293,8 @@ def run(state_path, out_dir, lessons):
         writer=csv.DictWriter(f,fieldnames=rows[0].keys());writer.writeheader();writer.writerows(rows)
     (out_dir/"experience_full.json").write_text(json.dumps(history,ensure_ascii=False,indent=2),encoding="utf-8")
     lines=["# Sổ tay rút kinh nghiệm – Bài 15.1","",
-      "**Mô phỏng, không phải thực nghiệm. Bản KHBD Word gốc được bảo toàn.**","",
+      "**Mô phỏng, không phải thực nghiệm. Bản KHBD Word gốc được bảo toàn.**",
+      "**Lưu ý: điểm v2.0 legacy và v2.1 evidence_guard khác công thức, không so sánh trực tiếp.**","",
       "| Lần | Đạt cả 3/38 | Đạt ≥3/5 | GK1 | GK2 | GK3 | TB | Điều chỉnh cho lần sau |",
       "|---:|---:|---:|---:|---:|---:|---:|---|"]
     for x in history["sessions"]:
@@ -280,7 +305,7 @@ def run(state_path, out_dir, lessons):
     lines+=["","## Phân tích sau từng tiết",""]
     for x in history["sessions"]:
         ref=x["reflection"];change=ref["change_for_next_lesson"]
-        lines+=[f"### Tiết {x['lesson']} – điểm TB {x['judge_mean']}/10",
+        lines+=[f"### Tiết {x['lesson']} – điểm TB {x['judge_mean']}/10 ({x.get('rubric_version','v2.0_legacy')})",
                 "**Ưu điểm:** "+"; ".join(ref["strengths"]),"",
                 "**Điểm cần khắc phục:** "+"; ".join(ref["weaknesses"]),"",
                 "**Nhận xét từng giám khảo:**",""]
@@ -295,6 +320,17 @@ def run(state_path, out_dir, lessons):
       "4. Khi người dùng yêu cầu chỉnh KHBD, đọc lại sổ tay này, đối chiếu minh chứng và chỉ viết phần sửa được giải thích rõ.",
       "5. Không đồng nhất điểm mô phỏng với hiệu quả giảng dạy thực tế." ]
     (out_dir/"LESSON_REVIEW.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
+    amendments=["# Đề xuất chỉnh sửa KHBD 15.1 – sổ thay đổi","",
+      "Tệp KHBD Word gốc là bản bất biến; mỗi đề xuất được truy vết về tiết và chỉ áp dụng trong mô phỏng nếu vượt qua kiểm tra đối chứng.",""]
+    for x in history["sessions"]:
+        c=x["reflection"]["change_for_next_lesson"]
+        if c.get("status")=="trial_accepted":
+            amendments += [f"## Sau tiết {x['lesson']}: {c.get('target_KHBD_section','')}",
+               c.get("proposed_revision",""),
+               f"Minh chứng: đạt đồng thời ba yêu cầu {x['lesson_metrics']['all3']}/38; GK1/GK2/GK3: "+", ".join(str(j['score_10']) for j in x["judges"]),
+               f"Thử đối chứng theo cùng hồ sơ: chênh lệch chỉ số tổng hợp {c.get('paired_holdout_gain')}.",""]
+    amendments += ["Không có thay đổi trực tiếp vào tài liệu KHBD đã tải lên; khi giáo viên yêu cầu chỉnh một mục, cần tạo bản sửa có lịch sử và so sánh với tài liệu gốc."]
+    (out_dir/"KHBD15_CHANGELOG.md").write_text("\n".join(amendments)+"\n",encoding="utf-8")
     # Persist a compact human-readable index in git for future assistants/tools.
     index=out_dir.parent/"LATEST_LESSON_REVIEW.md"
     index.write_text("\n".join(lines)+"\n",encoding="utf-8")
