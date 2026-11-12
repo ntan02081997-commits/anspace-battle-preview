@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#0c1930"/>
+<title>AnSpace Teaching Studio · Hóa học 10</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#19273b;background:#eef3f9;font-size:15px}*{box-sizing:border-box}button,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.35;cursor:not-allowed}button:focus-visible,select:focus-visible{outline:3px solid #f5b44b;outline-offset:3px}body{margin:0}.app{display:grid;grid-template-columns:282px minmax(400px,1fr);min-height:100vh}.sidebar{background:#0c1930;color:#f1f5ff;padding:24px 18px;display:flex;flex-direction:column;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:17px}.brandmark{height:40px;width:40px;border-radius:12px;background:linear-gradient(135deg,#44d9b0,#5ea5fa);display:grid;place-items:center;color:#081726;font-weight:900}.dim{color:#94aac6}.side-heading{font-size:10px;color:#a9bdd7;text-transform:uppercase;letter-spacing:.16em;font-weight:800;margin-bottom:10px}.select{width:100%;background:#1c2c47;border:1px solid #3a4c65;color:#f5f8ff;border-radius:10px;padding:11px;margin-top:6px}.lessonline{background:#1b2d47;border:1px solid #426277;padding:12px;border-radius:11px;font-weight:700;line-height:1.5}.lessonline small{display:block;color:#b1c6de;font-weight:400}.nav{display:flex;flex-direction:column;gap:8px}.nav button{display:flex;align-items:center;text-align:left;gap:12px;background:transparent;color:#b7c9df;border:1px solid transparent;border-radius:11px;padding:12px 10px;font-size:13px}.nav button .num{font-size:11px;background:#2b3b56;padding:6px 8px;border-radius:8px;font-weight:800}.nav button.active{background:#1c3650;color:#fff;border-color:#4cae9f}.nav button.active .num{background:#1d947c}.foot{margin-top:auto;font-size:12px;color:#94aac6;border-top:1px solid #30405a;padding-top:18px}.main{padding:22px clamp(20px,3vw,52px) 36px;max-width:1500px;width:100%;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:18px}.eyebrow{letter-spacing:.11em;font-size:11px;font-weight:800;color:#497184;text-transform:uppercase}.headtitle{font-size:23px;font-weight:900;margin:5px 0}.topcontrols{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.chip,.btn{border:1px solid #d2dfeb;background:white;color:#24374f;border-radius:10px;padding:11px 14px;font-weight:700}.chip{font-variant-numeric:tabular-nums;font-weight:800}.btn.primary{background:#157b6b;color:white;border-color:#157b6b}.btn:hover:not(:disabled){filter:brightness(.96)}.progress{height:6px;background:#d8e3ef;border-radius:100px;overflow:hidden;margin:0 0 16px}.progress>div{height:100%;width:20%;background:#2bae93;transition:width .3s}.stage{background:#0b1e35;border:1px solid #172b42;border-radius:20px;min-height:410px;box-shadow:0 20px 45px rgba(21,49,74,.17);color:#eaf5ff;display:flex;flex-direction:column;overflow:hidden;position:relative}.stage::before{content:"";position:absolute;top:-240px;right:-110px;width:530px;height:530px;border-radius:100%;background:radial-gradient(circle,#226c83 0%,transparent 68%);opacity:.24;pointer-events:none}.stagehead{display:flex;align-items:center;justify-content:space-between;padding:25px 31px 0;gap:12px;position:relative}.tag{border:1px solid #4d728b;border-radius:100px;padding:6px 12px;color:#a5ecda;font-weight:800;font-size:12px}.pages{color:#aec3d8;font-size:12px}.stagebody{position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:28px 48px 42px}.stagebody h2{font-size:clamp(25px,3.2vw,46px);margin:4px 0 12px;line-height:1.17;letter-spacing:-.025em}.stagebody .sub{color:#67e2bd;font-size:15px;font-weight:750}.stagebody .question{font-size:clamp(15px,1.6vw,20px);max-width:780px;color:#c8d9eb;line-height:1.6;margin:23px 0 0}.chemgrid{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:25px}.chem{background:#173751;border:1px solid #355d74;border-radius:14px;padding:17px 21px;min-width:140px;color:#f3faff}.chem strong{display:block;font-size:24px;margin-bottom:5px}.chem span{font-size:12px;color:#9dc4de}.rule-area{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin-top:20px}.choice{border:1px solid #62849a;background:#173953;color:#f6fbff;padding:11px 21px;border-radius:10px;font-weight:800}.choice:focus-visible{outline-offset:5px}.choice.correct{border-color:#43dab2;background:#1e655d}.choice.wrong{border-color:#eb9b7b;background:#70413f}.answer{margin-top:16px;color:#f0f5ff;min-height:27px;max-width:700px}.warning{background:#fff7e5;border:1px solid #f2d9a6;color:#69501d;border-radius:12px;padding:12px 15px;font-size:12px;margin:15px 0;line-height:1.5}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-top:17px}.toolbar .arrows{display:flex;gap:9px}.panelrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:15px;margin-top:18px}.panel{background:#fff;border:1px solid #dbe6ef;border-radius:14px;padding:19px 20px;box-shadow:0 1px 2px #dee7ee}.panel h3{font-size:14px;margin:0 0 10px}.panel p{color:#50627a;line-height:1.6;font-size:13px;margin:0}.note-label{font-size:11px;color:#7990aa;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.micro{display:flex;align-items:center;gap:8px;font-size:12px;color:#577185;margin:12px 0 0}.projection .sidebar,.projection .top,.projection .progress,.projection .toolbar,.projection .panelrow,.projection .warning,.projection .micro{display:none}.projection .app{display:block}.projection .main{padding:0;max-width:none}.projection .stage{height:100vh;min-height:0;border:0;border-radius:0}.projection .stagehead{padding:33px 48px}.projection .stagebody h2{font-size:clamp(36px,5vw,78px)}.projection .stagebody .question{font-size:clamp(24px,2.3vw,35px);max-width:1100px}.projection .chem strong{font-size:36px}.projectionExit{position:fixed;bottom:14px;right:14px;z-index:20;opacity:.78;display:none}.projection .projectionExit{display:block}@media(max-width:840px){.app{display:block}.sidebar{padding:15px}.brand{font-size:15px}.nav{flex-direction:row;overflow:auto}.nav button{min-width:154px}.foot{display:none}.main{padding:18px 14px}.headtitle{font-size:19px}.stage{min-height:360px}.stagebody{padding:16px 20px 30px}.panelrow{grid-template-columns:1fr}.top{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" aria-label="Thư viện bài học">
+<div class="brand"><span class="brandmark">A</span><span>AnSpace<br/><small class="dim">TEACHING STUDIO</small></span></div>
+<div><div class="side-heading">Danh mục</div><label for="subject">Môn học</label><select class="select" id="subject"><option>Hóa học 10 · KNTT</option></select></div>
+<div><div class="side-heading">Bài đang chọn</div><div class="lessonline" id="lesson-label">Bài 15<small>Tiết 1 · Số oxi hóa</small></div></div>
+<div><div class="side-heading">Nội dung tiết dạy</div><nav class="nav" id="lesson-nav" aria-label="Các mục bài học"></nav></div>
+<div class="foot">Bản mẫu nội bộ · Chỉ lưu nội dung tự soạn.<br/>Tài liệu SGK/SGV nguyên bản không xuất bản công khai.</div>
+</aside>
+<main class="main">
+<header class="top"><div><div class="eyebrow">Không tự chuyển nội dung · Điều khiển bởi giáo viên</div><h1 class="headtitle">Bài 15 · Tiết 1: Số oxi hóa</h1></div>
+<div class="topcontrols"><span class="chip" id="clock" aria-label="Thời gian đã trôi qua">00:00</span><button class="btn" id="timer-btn" type="button">▶ Bắt đầu giờ</button><button class="btn" id="teacher-btn" type="button" aria-pressed="true">Ghi chú GV: Bật</button><button class="btn primary" id="projection-btn" type="button">⛶ Trình chiếu</button></div></header>
+<div class="progress" aria-label="Tiến độ bài học"><div id="progress-fill"></div></div>
+<section class="stage" aria-live="polite" aria-label="Màn hình trình chiếu">
+<div class="stagehead"><span class="tag" id="phase"></span><span class="pages" id="counter"></span></div>
+<div class="stagebody"><div class="sub" id="subtitle"></div><h2 id="slide-title"></h2><p class="question" id="slide-text"></p><div id="visual"></div></div>
+</section>
+<div class="toolbar"><div class="arrows"><button class="btn" id="prev" type="button">← Trước</button><button class="btn primary" id="next" type="button">Tiếp theo →</button></div><button class="btn" id="reset" type="button">↻ Đặt lại đồng hồ</button><span id="duration" class="chip"></span></div>
+<div class="warning" role="note">Lưu ý nguồn KHBD: 4 + 25 + 12 + 1 = 42 phút; còn 3 phút chưa được phân bổ rõ. Năm câu Wayground hiện thiếu nội dung câu hỏi nguyên văn. Cần nhập SGK, SGV và bổ sung ngữ liệu trước khi dùng chính thức.</div>
+<div class="panelrow" id="teacher-panels">
+<div class="panel"><div class="note-label">Sư phạm · Chỉ hiển thị cho giáo viên</div><h3>Hướng dẫn tổ chức</h3><p id="teacher-note"></p></div>
+<div class="panel"><div class="note-label">Đánh giá và sản phẩm</div><h3>Minh chứng học tập</h3><p id="assessment-note"></p></div>
+</div>
+<div class="micro">⌨ Dùng phím ← → để chuyển mục. Trong chế độ trình chiếu, bấm ESC hoặc nút thoát để quay lại.</div>
+</main></div>
+<button class="btn projectionExit" id="exit-projection" type="button">Thoát trình chiếu ✕</button>
+<script id="lesson-data" type="application/json">__LESSON_DATA__</script>
+<script>
+(function(){
+'use strict';
+const data=JSON.parse(document.getElementById('lesson-data').textContent);
+const sections=data.sections;
+let index=0,teacher=true,seconds=0,running=false,interval=null;
+const $=id=>document.getElementById(id);
+function node(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e;}
+function choose(e,ok,formula){const box=$('answer');box.textContent=ok?'Chính xác. '+formula:'Chưa đúng. Tổng số oxi hóa của ion phải bằng điện tích ion (−2).';e.classList.add(ok?'correct':'wrong');}
+function renderVisual(s){
+const v=$('visual');v.replaceChildren();
+if(s.kind==='compare'){
+ const g=node('div','chemgrid');[['NaCl','Liên kết ion'],['H₂O','Cộng hóa trị phân cực']].forEach(x=>{let c=node('div','chem');c.append(node('strong','',x[0]),node('span','',x[1]));g.append(c)});v.append(g);
+}else if(s.kind==='concept'){
+ const g=node('div','chemgrid');[['+2','Số oxi hóa: dấu trước số'],['2+','Điện tích ion: số trước dấu']].forEach(x=>{let c=node('div','chem');c.append(node('strong','',x[0]),node('span','',x[1]));g.append(c)});v.append(g);
+}else if(s.kind==='calculator'){
+ const g=node('div','rule-area');['0','−2','+2'].forEach(a=>{const b=node('button','choice',a);b.type='button';b.addEventListener('click',()=>choose(b,a==='−2','x + 4(−2) = −2 ⇒ x = +6.'));g.append(b)});v.append(g,node('div','answer',''));
+}else if(s.kind==='quiz'){
+ const g=node('div','chemgrid');const q=node('div','chem');q.append(node('strong','','5 câu'),node('span','','Wayground QR · Dự kiến 38 học sinh'));g.append(q);const p=node('div','answer','Năm nội dung câu hỏi gốc chưa có. Đáp án tham chiếu: B – C – B – A – C.');v.append(g,p);
+}else if(s.kind==='homework'){
+ const g=node('div','chemgrid');const q=node('div','chem');q.append(node('strong','','H₂O₂'),node('span','','Số oxi hóa của O là −1'));g.append(q);v.append(g);
+}}
+function render(){
+ const s=sections[index];
+ $('slide-title').textContent=s.title;$('slide-text').textContent=s.prompt;
+ $('subtitle').textContent=s.subtitle;$('phase').textContent=s.phase+' · '+s.minutes+' phút';
+ $('counter').textContent=(index+1)+' / '+sections.length;
+ $('duration').textContent='Mục '+(index+1)+' · '+s.sub;
+ $('teacher-note').textContent=s.teacher;
+ $('assessment-note').textContent=s.assessment;
+ $('progress-fill').style.width=(100*(index+1)/sections.length)+'%';
+ $('prev').disabled=index===0;$('next').disabled=index===sections.length-1;
+ [...$('lesson-nav').children].forEach((el,i)=>{el.classList.toggle('active',i===index);el.setAttribute('aria-current',i===index?'step':'false')});
+ renderVisual(s);
+}
+function select(i){if(i<0||i>=sections.length)return;index=i;render()}
+for(let i=0;i<sections.length;i++){const s=sections[i],b=node('button','');b.type='button';b.append(node('span','num',String(i+1).padStart(2,'0')),node('span','',s.sub));b.addEventListener('click',()=>select(i));$('lesson-nav').append(b);}
+$('prev').addEventListener('click',()=>select(index-1));$('next').addEventListener('click',()=>select(index+1));
+$('teacher-btn').addEventListener('click',()=>{teacher=!teacher;$('teacher-panels').hidden=!teacher;$('teacher-btn').textContent='Ghi chú GV: '+(teacher?'Bật':'Tắt');$('teacher-btn').setAttribute('aria-pressed',String(teacher))});
+function projection(on){document.body.classList.toggle('projection',on);if(!on&&document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(()=>{});}
+$('projection-btn').addEventListener('click',()=>{projection(true);if(document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>{});});
+$('exit-projection').addEventListener('click',()=>projection(false));document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement)projection(false)});
+function tick(){if(!running)return;seconds++;updateClock()}
+function updateClock(){const m=Math.floor(seconds/60),s=seconds%60;$('clock').textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}
+$('timer-btn').addEventListener('click',()=>{running=!running;$('timer-btn').textContent=running?'Ⅱ Tạm dừng':'▶ Tiếp tục';if(interval)clearInterval(interval);interval=running?setInterval(tick,1000):null;});
+$('reset').addEventListener('click',()=>{running=false;if(interval)clearInterval(interval);interval=null;seconds=0;updateClock();$('timer-btn').textContent='▶ Bắt đầu giờ';});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){projection(false);return}if(['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName))return;if(e.key==='ArrowRight'){e.preventDefault();select(index+1)}if(e.key==='ArrowLeft'){e.preventDefault();select(index-1)}});
+render();
+})();
+</script>
+</body>
+</html>
