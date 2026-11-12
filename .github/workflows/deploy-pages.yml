@@ -30,6 +30,11 @@ jobs:
             echo 'BLOCKED: possible production backend or secret'
             exit 1
           fi
+          # Never publish previews carrying deleted character definitions or legacy hero assets.
+          if grep -R -Eiq '(yveltal|mewtwo|gengar|phoenix|phượng hoàng|trinh kỵ lam|trịnh kỵ lam)' public; then
+            echo 'BLOCKED: deleted hero content in public Preview'
+            exit 1
+          fi
           test "$(find public -type f | wc -l)" -eq 2
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
