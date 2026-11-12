@@ -49,7 +49,8 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add sim-experience/experience.json sim-experience/LATEST_LESSON_REVIEW.md
+          cp sim-experience/latest/KHBD15_CHANGELOG.md sim-experience/KHBD15_CHANGELOG.md
+          git add sim-experience/experience.json sim-experience/LATEST_LESSON_REVIEW.md sim-experience/KHBD15_CHANGELOG.md sim-experience/latest/every_lesson_scores.csv
           if git diff --cached --quiet; then echo 'Experience unchanged'; exit 0; fi
           git commit -m 'data(classroom): retain iterative lessons and judge evidence [skip ci]'
           git push origin HEAD:refs/heads/experiment/khbd15-classroom-sim-20261112
