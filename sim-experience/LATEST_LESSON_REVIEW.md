@@ -1,6 +1,7 @@
 # Sổ tay rút kinh nghiệm – Bài 15.1
 
 **Mô phỏng, không phải thực nghiệm. Bản KHBD Word gốc được bảo toàn.**
+**Lưu ý: điểm v2.0 legacy và v2.1 evidence_guard khác công thức, không so sánh trực tiếp.**
 
 | Lần | Đạt cả 3/38 | Đạt ≥3/5 | GK1 | GK2 | GK3 | TB | Điều chỉnh cho lần sau |
 |---:|---:|---:|---:|---:|---:|---:|---|
@@ -9,10 +10,15 @@
 | 3 | 3 | 29 | 7.2 | 6.96 | 4.47 | 6.21 | ion_scaffold (trial_accepted) |
 | 4 | 3 | 25 | 7.62 | 7.4 | 4.68 | 6.57 | formative_feedback (trial_accepted) |
 | 5 | 5 | 22 | 7.62 | 7.4 | 5.4 | 6.81 | formative_feedback (trial_accepted) |
+| 6 | 3 | 28 | 7.7 | 7.68 | 4.88 | 6.75 | formative_feedback (trial_accepted) |
+| 7 | 5 | 29 | 7.49 | 7.3 | 5.09 | 6.63 | concept_clarifier (trial_accepted) |
+| 8 | 7 | 30 | 7.43 | 7.25 | 5.26 | 6.65 | concept_clarifier (trial_accepted) |
+| 9 | 7 | 30 | 7.87 | 7.6 | 5.42 | 6.96 | pair_guidance (trial_accepted) |
+| 10 | 9 | 31 | 8.62 | 8.24 | 5.57 | 7.48 | pair_guidance (trial_accepted) |
 
 ## Phân tích sau từng tiết
 
-### Tiết 1 – điểm TB 5.44/10
+### Tiết 1 – điểm TB 5.44/10 (v2.0_legacy)
 **Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
 
 **Điểm cần khắc phục:** 16/38 chưa đạt minh chứng khái niệm/biểu diễn.; 20/38 chưa đạt minh chứng 4 quy tắc (proxy).; 28/38 chưa đạt minh chứng vận dụng.; 17/38 nhầm/sai SO₄²⁻ ban đầu.
@@ -26,7 +32,7 @@
 **Đề xuất sau tiết:** HĐ 2.2: Trước khi tính SO₄²⁻, HS nói rõ tổng số oxi hóa bằng điện tích ion; dùng 45 giây trong phần chuẩn hóa hiện có.
 **Quyết định:** trial_accepted; paired holdout gain = 0.01549
 
-### Tiết 2 – điểm TB 5.82/10
+### Tiết 2 – điểm TB 5.82/10 (v2.0_legacy)
 **Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
 
 **Điểm cần khắc phục:** 13/38 chưa đạt minh chứng khái niệm/biểu diễn.; 23/38 chưa đạt minh chứng 4 quy tắc (proxy).; 30/38 chưa đạt minh chứng vận dụng.; 23/38 nhầm/sai SO₄²⁻ ban đầu.
@@ -40,7 +46,7 @@
 **Đề xuất sau tiết:** HĐ 2.2: Trước khi tính SO₄²⁻, HS nói rõ tổng số oxi hóa bằng điện tích ion; dùng 45 giây trong phần chuẩn hóa hiện có.
 **Quyết định:** trial_accepted; paired holdout gain = 0.01414
 
-### Tiết 3 – điểm TB 6.21/10
+### Tiết 3 – điểm TB 6.21/10 (v2.0_legacy)
 **Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
 
 **Điểm cần khắc phục:** 19/38 chưa đạt minh chứng khái niệm/biểu diễn.; 17/38 chưa đạt minh chứng 4 quy tắc (proxy).; 27/38 chưa đạt minh chứng vận dụng.; 19/38 nhầm/sai SO₄²⁻ ban đầu.
@@ -54,7 +60,7 @@
 **Đề xuất sau tiết:** HĐ 2.2: Trước khi tính SO₄²⁻, HS nói rõ tổng số oxi hóa bằng điện tích ion; dùng 45 giây trong phần chuẩn hóa hiện có.
 **Quyết định:** trial_accepted; paired holdout gain = 0.0163
 
-### Tiết 4 – điểm TB 6.57/10
+### Tiết 4 – điểm TB 6.57/10 (v2.0_legacy)
 **Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
 
 **Điểm cần khắc phục:** 18/38 chưa đạt minh chứng khái niệm/biểu diễn.; 20/38 chưa đạt minh chứng 4 quy tắc (proxy).; 31/38 chưa đạt minh chứng vận dụng.; 20/38 nhầm/sai SO₄²⁻ ban đầu.
@@ -68,7 +74,7 @@
 **Đề xuất sau tiết:** HĐ 3: Sau thống kê QR, yêu cầu HS giải thích một lựa chọn sai và thử sửa trước khi công bố lời giải; rút thời gian công bố đáp án đơn thuần.
 **Quyết định:** trial_accepted; paired holdout gain = 0.00837
 
-### Tiết 5 – điểm TB 6.81/10
+### Tiết 5 – điểm TB 6.81/10 (v2.0_legacy)
 **Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
 
 **Điểm cần khắc phục:** 18/38 chưa đạt minh chứng khái niệm/biểu diễn.; 21/38 chưa đạt minh chứng 4 quy tắc (proxy).; 30/38 chưa đạt minh chứng vận dụng.; 20/38 nhầm/sai SO₄²⁻ ban đầu.
@@ -81,6 +87,76 @@
 
 **Đề xuất sau tiết:** HĐ 3: Sau thống kê QR, yêu cầu HS giải thích một lựa chọn sai và thử sửa trước khi công bố lời giải; rút thời gian công bố đáp án đơn thuần.
 **Quyết định:** trial_accepted; paired holdout gain = 0.00743
+
+### Tiết 6 – điểm TB 6.75/10 (v2.1_evidence_guard)
+**Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
+
+**Điểm cần khắc phục:** 13/38 chưa đạt minh chứng khái niệm/biểu diễn.; 19/38 chưa đạt minh chứng 4 quy tắc (proxy).; 30/38 chưa đạt minh chứng vận dụng.; 23/38 nhầm/sai SO₄²⁻ ban đầu.
+
+**Nhận xét từng giám khảo:**
+
+- GK1_chuyen_mon: 7.7/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=0.89, misconception_handling_2=1.63, differentiated_practice_2=1.38
+- GK2_su_pham: 7.68/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.06, scaffolding_and_response_3=1.97, time_and_materials_2=1.75
+- GK3_danh_gia: 4.88/10; tiêu chí: evidence_for_objectives_3=1.86, prepost_progress_2=1.01, use_feedback_to_adapt_3=0.87, competency_quality_evidence_2=1.14
+
+**Đề xuất sau tiết:** HĐ 3: Sau thống kê QR, yêu cầu HS giải thích một lựa chọn sai và thử sửa trước khi công bố lời giải; rút thời gian công bố đáp án đơn thuần.
+**Quyết định:** trial_accepted; paired holdout gain = 0.00451
+
+### Tiết 7 – điểm TB 6.63/10 (v2.1_evidence_guard)
+**Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
+
+**Điểm cần khắc phục:** 15/38 chưa đạt minh chứng khái niệm/biểu diễn.; 29/38 chưa đạt minh chứng 4 quy tắc (proxy).; 26/38 chưa đạt minh chứng vận dụng.; 15/38 nhầm/sai SO₄²⁻ ban đầu.
+
+**Nhận xét từng giám khảo:**
+
+- GK1_chuyen_mon: 7.49/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=0.75, misconception_handling_2=1.56, differentiated_practice_2=1.38
+- GK2_su_pham: 7.3/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=1.74, scaffolding_and_response_3=1.91, time_and_materials_2=1.75
+- GK3_danh_gia: 5.09/10; tiêu chí: evidence_for_objectives_3=2.01, prepost_progress_2=1.01, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.04
+
+**Đề xuất sau tiết:** HĐ 2.1: Thêm câu truy vấn so sánh số oxi hóa và điện tích ion trong H₂O; thay một phần thời gian kết luận, không tăng 9 phút.
+**Quyết định:** trial_accepted; paired holdout gain = 0.00851
+
+### Tiết 8 – điểm TB 6.65/10 (v2.1_evidence_guard)
+**Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
+
+**Điểm cần khắc phục:** 16/38 chưa đạt minh chứng khái niệm/biểu diễn.; 21/38 chưa đạt minh chứng 4 quy tắc (proxy).; 24/38 chưa đạt minh chứng vận dụng.; 14/38 nhầm/sai SO₄²⁻ ban đầu.
+
+**Nhận xét từng giám khảo:**
+
+- GK1_chuyen_mon: 7.43/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=0.92, misconception_handling_2=1.33, differentiated_practice_2=1.38
+- GK2_su_pham: 7.25/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=1.9, scaffolding_and_response_3=1.7, time_and_materials_2=1.75
+- GK3_danh_gia: 5.26/10; tiêu chí: evidence_for_objectives_3=2.07, prepost_progress_2=1.02, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.14
+
+**Đề xuất sau tiết:** HĐ 2.1: Thêm câu truy vấn so sánh số oxi hóa và điện tích ion trong H₂O; thay một phần thời gian kết luận, không tăng 9 phút.
+**Quyết định:** trial_accepted; paired holdout gain = 0.00693
+
+### Tiết 9 – điểm TB 6.96/10 (v2.1_evidence_guard)
+**Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
+
+**Điểm cần khắc phục:** 14/38 chưa đạt minh chứng khái niệm/biểu diễn.; 16/38 chưa đạt minh chứng 4 quy tắc (proxy).; 26/38 chưa đạt minh chứng vận dụng.; 13/38 nhầm/sai SO₄²⁻ ban đầu.
+
+**Nhận xét từng giám khảo:**
+
+- GK1_chuyen_mon: 7.87/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=1.01, misconception_handling_2=1.68, differentiated_practice_2=1.38
+- GK2_su_pham: 7.6/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.01, scaffolding_and_response_3=2.02, time_and_materials_2=1.67
+- GK3_danh_gia: 5.42/10; tiêu chí: evidence_for_objectives_3=2.11, prepost_progress_2=1.03, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.25
+
+**Đề xuất sau tiết:** HĐ 2.1: Giao nhiệm vụ cho hai vai trong mỗi cặp: giải thích và kiểm tra dấu/số; giữ thời lượng 2 phút cá nhân + 2 phút cặp.
+**Quyết định:** trial_accepted; paired holdout gain = 0.01044
+
+### Tiết 10 – điểm TB 7.48/10 (v2.1_evidence_guard)
+**Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
+
+**Điểm cần khắc phục:** 8/38 chưa đạt minh chứng khái niệm/biểu diễn.; 17/38 chưa đạt minh chứng 4 quy tắc (proxy).; 23/38 chưa đạt minh chứng vận dụng.; 20/38 nhầm/sai SO₄²⁻ ban đầu.
+
+**Nhận xét từng giám khảo:**
+
+- GK1_chuyen_mon: 8.62/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=1.14, misconception_handling_2=2, differentiated_practice_2=1.68
+- GK2_su_pham: 8.24/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.18, scaffolding_and_response_3=2.57, time_and_materials_2=1.59
+- GK3_danh_gia: 5.57/10; tiêu chí: evidence_for_objectives_3=2.16, prepost_progress_2=1.06, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.32
+
+**Đề xuất sau tiết:** HĐ 2.1: Giao nhiệm vụ cho hai vai trong mỗi cặp: giải thích và kiểm tra dấu/số; giữ thời lượng 2 phút cá nhân + 2 phút cặp.
+**Quyết định:** trial_accepted; paired holdout gain = 0.00884
 
 ## Nguyên tắc sử dụng
 
