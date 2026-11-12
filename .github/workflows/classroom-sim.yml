@@ -1,0 +1,31 @@
+name: Simulate KHBD 15.1 classroom (isolated)
+on:
+  push:
+    branches:
+      - experiment/khbd15-classroom-sim-20261112
+    paths:
+      - 'classroom-sim/**'
+      - '.github/workflows/classroom-sim.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: classroom-sim-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify headless model
+        run: python3 classroom-sim/simulate.py --self-test --runs 1 --out /tmp/classroom-test
+      - name: Run 10 simulated lessons
+        run: python3 classroom-sim/simulate.py --runs 10 --seed 151001 --out classroom-sim/results
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: khbd15-classroom-results
+          path: classroom-sim/results/
+          if-no-files-found: error
+          retention-days: 14
