@@ -20,6 +20,11 @@
 | 13 | 9 | 27 | 8.18 | 7.99 | 5.57 | 7.25 | scan_rehearsal (trial_rejected) |
 | 14 | 4 | 26 | 8.5 | 8.44 | 5.53 | 7.49 | scan_rehearsal (trial_rejected) |
 | 15 | 4 | 33 | 8.63 | 8.71 | 5.68 | 7.67 | scan_rehearsal (trial_rejected) |
+| 16 | 4 | 28 | 8.33 | 8.15 | 5.48 | 7.32 | none (no_change_available) |
+| 17 | 7 | 27 | 8.66 | 8.44 | 5.51 | 7.54 | none (no_change_available) |
+| 18 | 6 | 29 | 8.18 | 8.04 | 5.63 | 7.28 | none (no_change_available) |
+| 19 | 6 | 23 | 8.67 | 8.6 | 5.65 | 7.64 | none (no_change_available) |
+| 20 | 5 | 30 | 8.29 | 8.23 | 5.6 | 7.37 | none (no_change_available) |
 
 ## Phân tích sau từng tiết
 
@@ -232,6 +237,76 @@
 
 **Đề xuất sau tiết:** HĐ 3: Cho HS thử tư thế giơ thẻ trong lúc phát thẻ QR để giảm lỗi quét; không tăng 12 phút.
 **Quyết định:** trial_rejected; paired holdout gain = 0.0009
+
+### Tiết 16 – điểm TB 7.32/10 (v2.1_evidence_guard)
+**Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
+
+**Điểm cần khắc phục:** 20/38 chưa đạt minh chứng khái niệm/biểu diễn.; 19/38 chưa đạt minh chứng 4 quy tắc (proxy).; 25/38 chưa đạt minh chứng vận dụng.; 13/38 nhầm/sai SO₄²⁻ ban đầu.
+
+**Nhận xét từng giám khảo:**
+
+- GK1_chuyen_mon: 8.33/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=0.87, misconception_handling_2=1.68, differentiated_practice_2=1.98
+- GK2_su_pham: 8.15/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.24, scaffolding_and_response_3=2.5, time_and_materials_2=1.51
+- GK3_danh_gia: 5.48/10; tiêu chí: evidence_for_objectives_3=2.05, prepost_progress_2=1.06, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.34
+
+**Đề xuất sau tiết:** —: Không có
+**Quyết định:** no_change_available; paired holdout gain = —
+
+### Tiết 17 – điểm TB 7.54/10 (v2.1_evidence_guard)
+**Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
+
+**Điểm cần khắc phục:** 16/38 chưa đạt minh chứng khái niệm/biểu diễn.; 20/38 chưa đạt minh chứng 4 quy tắc (proxy).; 25/38 chưa đạt minh chứng vận dụng.; 19/38 nhầm/sai SO₄²⁻ ban đầu.
+
+**Nhận xét từng giám khảo:**
+
+- GK1_chuyen_mon: 8.66/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=0.92, misconception_handling_2=1.96, differentiated_practice_2=1.98
+- GK2_su_pham: 8.44/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.29, scaffolding_and_response_3=2.74, time_and_materials_2=1.51
+- GK3_danh_gia: 5.51/10; tiêu chí: evidence_for_objectives_3=2.07, prepost_progress_2=1.07, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.34
+
+**Đề xuất sau tiết:** —: Không có
+**Quyết định:** no_change_available; paired holdout gain = —
+
+### Tiết 18 – điểm TB 7.28/10 (v2.1_evidence_guard)
+**Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
+
+**Điểm cần khắc phục:** 14/38 chưa đạt minh chứng khái niệm/biểu diễn.; 18/38 chưa đạt minh chứng 4 quy tắc (proxy).; 24/38 chưa đạt minh chứng vận dụng.; 17/38 nhầm/sai SO₄²⁻ ban đầu.
+
+**Nhận xét từng giám khảo:**
+
+- GK1_chuyen_mon: 8.18/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=1.01, misconception_handling_2=1.39, differentiated_practice_2=1.98
+- GK2_su_pham: 8.04/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.4, scaffolding_and_response_3=2.23, time_and_materials_2=1.51
+- GK3_danh_gia: 5.63/10; tiêu chí: evidence_for_objectives_3=2.11, prepost_progress_2=1.07, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.42
+
+**Đề xuất sau tiết:** —: Không có
+**Quyết định:** no_change_available; paired holdout gain = —
+
+### Tiết 19 – điểm TB 7.64/10 (v2.1_evidence_guard)
+**Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
+
+**Điểm cần khắc phục:** 12/38 chưa đạt minh chứng khái niệm/biểu diễn.; 20/38 chưa đạt minh chứng 4 quy tắc (proxy).; 24/38 chưa đạt minh chứng vận dụng.; 13/38 nhầm/sai SO₄²⁻ ban đầu.
+
+**Nhận xét từng giám khảo:**
+
+- GK1_chuyen_mon: 8.67/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=1.0, misconception_handling_2=1.89, differentiated_practice_2=1.98
+- GK2_su_pham: 8.6/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.5, scaffolding_and_response_3=2.69, time_and_materials_2=1.51
+- GK3_danh_gia: 5.65/10; tiêu chí: evidence_for_objectives_3=2.11, prepost_progress_2=1.06, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.45
+
+**Đề xuất sau tiết:** —: Không có
+**Quyết định:** no_change_available; paired holdout gain = —
+
+### Tiết 20 – điểm TB 7.37/10 (v2.1_evidence_guard)
+**Ưu điểm:** Bốn hoạt động và thời lượng của KHBD được giữ nguyên.; Có PHT 1, PHT 2, Paper Mode và giao bài H₂O₂ về nhà.
+
+**Điểm cần khắc phục:** 13/38 chưa đạt minh chứng khái niệm/biểu diễn.; 23/38 chưa đạt minh chứng 4 quy tắc (proxy).; 22/38 chưa đạt minh chứng vận dụng.; 12/38 nhầm/sai SO₄²⁻ ban đầu.
+
+**Nhận xét từng giám khảo:**
+
+- GK1_chuyen_mon: 8.29/10; tiêu chí: scientific_correctness_4=3.8, knowledge_objectives_2=0.97, misconception_handling_2=1.54, differentiated_practice_2=1.98
+- GK2_su_pham: 8.23/10; tiêu chí: four_activity_flow_2=1.9, active_learning_3=2.45, scaffolding_and_response_3=2.37, time_and_materials_2=1.51
+- GK3_danh_gia: 5.6/10; tiêu chí: evidence_for_objectives_3=2.09, prepost_progress_2=1.06, use_feedback_to_adapt_3=1.03, competency_quality_evidence_2=1.42
+
+**Đề xuất sau tiết:** —: Không có
+**Quyết định:** no_change_available; paired holdout gain = —
 
 ## Nguyên tắc sử dụng
 
